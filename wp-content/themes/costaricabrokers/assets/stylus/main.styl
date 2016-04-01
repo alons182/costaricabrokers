@@ -1,0 +1,752 @@
+@import "nib"
+@import "normalize.styl"
+@import "icons.styl"
+
+
+celeste = #1FAEC0
+oscuro = #191F26
+verde = #044902
+
+*
+	box-sizing border-box
+
+body
+	font-family 'Raleway', sans-serif
+	font-size 80%
+	line-height 30px
+	color oscuro
+
+
+
+ul
+	margin 0
+	padding 0
+	
+
+a
+	text-decoration none
+	transition all .5s ease
+
+h1
+h2
+h3
+h4
+h5
+	margin-top 0
+	font-family 'Montserrat', sans-serif
+	font-weight normal
+h1
+	line-height 45px
+
+img
+	max-width 100%
+	height auto
+
+.right
+	right 0
+.left
+	left 0
+.float-right
+	float right
+	margin-left 1rem
+.float-left
+	float left
+	margin-right 1rem
+.video
+	width 100%
+	height 300px
+	margin-bottom 1rem
+.columns
+	display	 inline-block
+	vertical-align top 
+	width 100%
+.ul-inline-block
+	display inline-block
+	vertical-align top	
+.txt-center
+	text-align center
+.color 
+	background-color verde
+.dark
+	background-color oscuro
+.white
+	background-color white
+
+.inner
+	max-width 1170px
+	margin 0 auto
+	position relative
+	padding-left 1rem
+	padding-right 1rem
+	
+@media screen and (min-width: 768px)
+	.video
+		width 450px
+	.columns-2
+		width 45%		
+		
+
+.header
+	position fixed
+	height 80px 
+	left 0
+	top 0
+	right 0
+	z-index: 100
+	box-shadow 0 1px 0 rgba(0,0,0,.15)
+	background-color white
+	
+	&__logo
+		float left
+		display block
+		padding-top 10px
+		width 180px
+		//margin-top 15px
+	&__menu
+		display none
+		position absolute
+		top 81px
+		left 0 
+		right 0
+		background-color white
+		
+		.menu-item
+		&__item
+			display block
+			
+		a
+		&__link
+			display block
+			padding .5rem 15px
+			font-family 'Montserrat', sans-serif
+			text-transform uppercase
+			color oscuro
+			
+			border-bottom 1px solid rgba(0,0,0,.15)
+	&__btn-menu
+		position absolute
+		top 0
+		right 16px
+		background-color transparent
+		color verde
+		font-size 2rem
+		line-height 80px
+		border 0
+		outline 0
+@media screen and (min-width: 768px)
+	body
+		font-size 100%
+@media screen and (min-width: 980px)
+	.header
+		&__menu 
+			display block
+			float right
+			position static
+			line-height 80px
+			.menu-item
+			&__item
+				display inline-block
+			.current
+				a 
+					color oscuro
+			a
+			&__link 
+				border 0
+				padding 0 .4rem
+				color #727679
+				&:hover 
+					color oscuro
+		&__btn-menu
+			display none
+				
+@media screen and (min-width: 1175px)
+	.header
+		&__menu 
+			a
+			&__link
+				padding 0 .9rem 
+	.inner
+		padding-left 0
+		padding-right 0		
+.intro
+	background url(./img/keyvisual.jpg) 50% 0 fixed no-repeat
+	height 100vh
+	overflow hidden
+	width 100%
+	display block
+	
+	.banner
+		position absolute
+		width 100%
+		height 100vh
+		z-index 0
+		
+		&-slide
+			background-size cover
+			background-position center center 
+			background-repeat no-repeat
+			width 100%
+			height 100vh
+  	
+	&__info
+		padding-top 38%	
+		text-align center
+		color white
+		h1 
+			font-size 2.5rem
+			text-transform uppercase
+			margin-top 0
+			margin-bottom 10px
+		h2 
+			font-size 12px
+			text-transform uppercase
+		
+		&__actions
+			margin 6px 0 0
+			padding 16px 0 0
+			
+			/*&:before
+				content ''
+				width 100px
+				height 2px 
+				background-color white
+				display block
+				margin 0 auto 3rem 
+				text-align center*/
+				
+			  
+		&__btn 
+			padding .8rem 2rem
+			display inline-block
+			text-transform uppercase
+			font-size 1rem
+			color oscuro
+			margin 0 10px
+			transition all .5s ease
+			border-radius 3px
+			font-weight bold
+			margin-bottom 1rem
+			&.color 
+				color white
+			&:hover
+				background-color oscuro
+				color white
+@media screen and (min-width: 480px)
+	.intro
+		&__info
+			h1 
+				font-size 3.5rem
+			h2	
+				font-size 1.5rem
+				
+/*@media screen and (min-width: 980px)
+	.intro
+		&__info
+			padding-top 35%	*/
+.home
+	.main 
+		padding-top 3rem
+	.search
+		padding 2rem 0 1rem			 
+.search
+	padding 6.5rem 0 1rem
+	color white
+	text-align center
+	&__form
+		&__row
+			margin-bottom 2rem
+			padding-bottom 2rem
+			border-bottom 1px solid rgba(0,0,0,.15)
+			box-shadow 0 1px 0 rgba(255,255,255,.3)
+			&:last-of-type
+				border none
+				padding-bottom 0
+				margin-bottom 0
+				box-shadow 0 0 0
+				
+			.form-group
+				display inline-block
+				width 100%
+				padding-bottom 1.3rem
+				
+				input[type="text"]
+					border: 1px solid #DFDFD0;
+					line-height: 45px;
+					height: 45px;
+					position: relative;
+					overflow: hidden;
+					width: 100% !important;
+					padding-left: 15px;
+					background: #fff;
+					border-radius: 3px;
+				select
+					width 100%
+					height 45px
+				label
+					float left 
+					display block 
+					font-weight bold 
+					text-transform uppercase
+					padding-bottom 1rem
+					color white
+				button
+					border none
+					text-transform uppercase
+					border-radius 3px
+					color #fff 
+					display inline-block
+					text-align center
+					max-width 100%
+					padding 1rem
+					width 100%
+					transition all .5s ease
+					&:hover
+						background-color white
+						color oscuro
+				/*&.spinner
+					label
+						padding-right 1rem
+					input
+						width 6% !important	*/		
+				&.radios
+					> div
+						float left
+						&:last-of-type
+							float left
+							padding-left 30px
+					.radio
+						position relative
+						top 0
+						margin-right 15px
+						float left
+@media screen and (min-width: 980px)
+	.search
+		&__form
+			&__row
+				display flex
+				justify-content space-between
+				flex-wrap wrap
+				
+					
+				.form-group
+					width 30%
+					
+					&.spinner
+						width 45%
+						label
+							padding-right 1rem
+						input
+							width 20% !important
+					&.radios 
+						width 25%
+						.radio
+							margin-right 10px
+						
+					&.btns
+						width 20%	
+
+.services-icons
+	padding-top 4rem
+	padding-bottom 3rem
+	&__item
+		width 100%
+		padding 0 0 2rem
+		display inline-block
+		position relative
+		&:hover
+			.services-icons__item__title
+			.services-icons__item__icon	
+				color verde
+		
+		&__icon 
+			float left
+			font-size 5rem
+			margin 10px 10px 20px 0
+			line-height 90px
+			background-image url('./img/icon-house.png')
+			background-size contain
+			background-repeat no-repeat
+			width 75px
+			height 150px
+		&__title
+			text-transform uppercase	
+			margin-bottom 0
+		&__intro
+			padding 0
+			line-height 20px
+			margin 5px
+	&__link 
+		position absolute
+		left 0
+		right 0
+		top 0
+		bottom 0
+		
+@media screen and (min-width: 800px)
+	.services-icons
+		&__container
+			display flex
+			justify-content space-between
+			flex-wrap wrap
+		&__item
+			width 45%
+@media screen and (min-width: 1200px)
+	.services-icons
+		
+		&__item
+			width 30%
+			
+.call
+	text-align center
+	padding 2rem 0 4rem
+	overflow hidden
+	p 
+		display inline-block
+		width 100%
+		padding 0
+		color white
+		font-size 1.5rem
+		
+	&__btn
+		font-size 1.5rem
+		padding 1rem 2rem
+		text-transform uppercase
+		//padding 1rem
+		color white
+		display inline-block
+		font-weight bold
+		&:hover
+			background-color white
+			color oscuro 
+
+@media screen and (min-width: 980px)
+	.call
+		text-align left
+		padding 1.8rem 0
+		p 
+			width 70%
+		&__btn
+			margin-top .5rem
+			font-size 1.5rem
+			padding 1rem 2rem
+			float right
+			vertical-align middle
+			
+				
+.services-box
+	&__item
+		width 100%
+		&__img
+			position relative
+			img 
+				width 100%
+				display block
+				
+			&:hover
+				.overlay 
+					opacity 1
+				.services-box__item__link
+					width 60px
+					height 60px
+					border-radius 30px
+				
+		.overlay
+			display block
+			position absolute
+			top 0
+			left 0
+			right 0
+			bottom 0
+			opacity 0
+			background rgba(0, 0, 0, .4)
+			overflow hidden
+			transition all .5s ease
+			border-radius 3px 0 0 3px
+		&__link
+			border 2px solid white
+			text-align center
+			line-height 60px
+			font-weight bold
+			font-size 2rem
+			display block 
+			position absolute
+			z-index 100
+			top 0
+			bottom 0
+			left 0
+			right 0
+			margin auto
+			width 100%
+			height 100%
+			border-radius 0
+			transition all .5s ease
+			color white
+		&__info
+			text-align left 
+			padding 1.2rem 2rem
+			h4 
+				text-transform uppercase
+				font-size 1.1rem
+				margin-bottom 1rem
+			p 
+				margin 0 0 1rem
+				font-size .9rem
+				line-height 25px
+		&__more
+			color verde
+			font-weight bold
+			display block
+			&:hover
+				text-decoration underline
+				
+@media screen and (min-width: 800px)
+	.services-box
+		overflow hidden
+		&__item
+			display inline-block
+			width 50%
+			float left
+			&__info
+				border-right 1px solid #DFDFD0
+@media screen and (min-width: 1024px)
+	.services-box
+		&__item
+			width 25%
+			
+.testimonials
+	color white
+	text-align center
+	padding-top 2rem
+	padding-bottom 2rem
+	width 100%
+	overflow hidden
+	&__slide
+		padding 0 1rem
+		width 100%
+	&__title
+		font-size 2rem
+		line-height 50px
+		text-transform uppercase
+		margin-top 0
+		margin-bottom 1.5rem
+		&:before
+			content '\f10d'
+			font-family 'icomoon'
+			margin-right .5rem
+			color verde
+			
+.partners
+	text-align center
+	padding-top 2rem
+	padding-bottom 2rem
+	&__title
+		font-size 2rem
+	&__link 
+		display block
+		margin-bottom 1rem
+@media screen and (min-width: 980px)
+	.partners
+		&__link
+			padding .5rem .5rem
+			width 18%
+			display inline-block
+			img
+				width 100%
+.gallery
+	/*display flex
+	flex-wrap wrap
+	justify-content center//space-around*/
+	width 100%//450px
+	img 
+		width 100%
+		display block
+	&-item
+		width 100%//450px
+.slider
+	position relative
+	width 100%//450px
+	height 300px
+	text-align center
+	p 
+		display none
+@media screen and (min-width: 768px)
+	.slider
+		width 450px
+	.gallery
+		width 450px
+		&-item 
+			width 450px
+.cycle-next
+.cycle-prev
+	position absolute
+	top 50%
+	color white
+	z-index 999
+	transform translate(0, -50%)
+	font-size 2rem
+	font-weight bold
+.cycle-prev
+	left 1rem
+.cycle-next
+	right 1rem
+.cycle-pager
+	position absolute
+	bottom 0
+	z-index 999
+	text-align center
+	left 0
+	right 0
+	span 
+		cursor pointer
+		color white
+		font-size 2.5rem
+		padding .2rem
+.content-area
+	padding 1rem
+.entry-content
+	overflow hidden
+	ul 
+		margin-left 45px
+		margin-bottom 1rem
+.main 
+	padding-top 5rem
+.footer 
+	background-color oscuro
+	color white
+	text-align center
+	padding-top 2rem
+	//padding-bottom 2rem
+	
+	&__info
+		
+		h6 
+			text-transform uppercase
+			margin-top 0
+			font-size 1rem
+			margin-bottom 1rem
+		article
+			margin-bottom 2rem
+	&__contact
+		i 
+			margin-right .5rem
+			font-size 2rem
+			vertical-align middle
+		a 
+			color white
+			&:hover
+				color verde
+		&__data
+			font-weight bold	
+	&__social
+		&__link 
+			display inline-block
+			padding .5rem
+			font-size 1.3rem 
+			color white
+			background-color #727679
+			line-height 0
+			border-radius 50%
+			margin 0 .5rem
+			margin-bottom 1rem
+			
+			&:hover
+				background-color verde
+				color white
+			
+			&:first-of-type
+				padding .5rem .75rem
+			
+	
+	&__menu 
+		.menu-item
+		&__item
+			display inline-block
+			vertical-align top 
+		a
+		&__link
+			display block
+			color #727679
+			padding .5rem
+			
+			
+			&:hover 
+				color white
+	&__copyright
+		padding-top 1rem
+		border-top 1px solid rgba(255,255,255,.07)
+		box-shadow 0 -1px 0 rgba(0,0,0,.5)
+		p
+			margin 0
+		a 
+			color #727679
+			&:hover
+				text-decoration underline
+				color white
+		
+@media screen and (min-width: 980px)					
+	.footer
+		text-align left
+		&__info
+			overflow hidden
+		&__about
+			width 50%
+			float left
+			font-size .8rem
+			padding 0 15px 30px
+		&__contact
+		&__social
+			width 25%
+			float left
+			padding 0 15px 30px
+		
+		&__copyright
+			text-align center
+			color #727679
+				
+.tabs
+	position: relative;   
+	min-height: 250px; /* This part sucks */
+	clear: both;
+	margin: 25px 0;
+	
+	.content
+		position: static;
+		top: 28px;
+		left: 0;
+		background: white;
+		right: 0;
+		bottom: 0;
+		padding: 20px;
+		border: 1px solid #ccc;
+	
+	[type=radio]:checked ~ label 
+		background: white;
+		border-bottom: 1px solid white;
+		z-index: 2;
+
+	[type=radio]:checked ~ label ~ .content
+		z-index: 1;
+					 
+
+.tab
+	float: left
+
+.tab 
+	label
+		background: #eee; 
+		padding: 10px; 
+		border: 1px solid #ccc; 
+		margin-left: -1px; 
+		position: relative;
+		left: 1px; 
+		cursor pointer
+
+	[type=radio]
+		display: none;   
+
+@media screen and (min-width: 940px)		
+	.tabs
+		.content
+			position: absolute;
+							
+	

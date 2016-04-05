@@ -36,9 +36,7 @@ get_header(); ?>
                           $wp_query = null;
                           $wp_query = new WP_Query( $args );
 
-                          if( $wp_query->have_posts() ) {
-                            while( $wp_query->have_posts() ) {
-                              $wp_query->the_post();
+                          if( $wp_query->have_posts() ) : while( $wp_query->have_posts() ) : $wp_query->the_post();
                               
                             
 
@@ -61,16 +59,15 @@ get_header(); ?>
                                     </div>
                            
             
-                         <?php
-                            }               
-                          }
-                        ?>
-                       
-                   
-                    <?php 
-                        $wp_query = null; 
-                        $wp_query = $temp;  // Reset
-                      ?>
+                                  <?php endwhile; ?>
+                            <!-- post navigation -->
+                          
+                        <?php endif; ?>
+                                        
+                        <?php 
+                            $wp_query = null; 
+                            $wp_query = $temp;  // Reset
+                          ?>
                 
             </div>
         </div>

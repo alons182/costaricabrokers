@@ -61,43 +61,37 @@ get_header(); ?>
         <div class="inner">
 
             <div class="services-icons__container">
-                <div class="services-icons__item wow fadeIn" data-wow-delay=".2s">
-                    <span class="services-icons__item__icon "></span>
-                    <h3 class="services-icons__item__title">Casa Lina</h3>
-                    <p class="services-icons__item__intro">This incredibly beautiful beach front house is located in Playa Hermosa. It has the most amazing views, and the beach is right there! </p>
-                    <a href="./casa-lina" class="services-icons__link"></a>
-                </div>
-                <div class="services-icons__item wow fadeIn" data-wow-delay=".2s">
-                    <span class="services-icons__item__icon "></span>
-                    <h3 class="services-icons__item__title">Blue Villa</h3>
-                    <p class="services-icons__item__intro">Blue Villa is a one level home with a very special atmosphere. Its chic and homey furniture mix with the incredible view this house offers. </p>
-                    <a href="./blue-villa" class="services-icons__link"></a>
-                </div>
-                <div class="services-icons__item wow fadeIn" data-wow-delay=".2s">
-                    <span class="services-icons__item__icon "></span>
-                    <h3 class="services-icons__item__title">Casa Jewel</h3>
-                    <p class="services-icons__item__intro">This is truly an exquisite and unique home! Located in the exclusive Ocotal Beach, Guanacaste.</p>
-                    <a href="./casa-jewel" class="services-icons__link"></a>
-                </div>
-                <div class="services-icons__item wow fadeIn" data-wow-delay=".2s">
-                    <span class="services-icons__item__icon "></span>
-                    <h3 class="services-icons__item__title">Casa  Joya de la Montaña</h3>
-                    <p class="services-icons__item__intro">Live the life you have imagined in this gorgeous home/estate with this breathtaking panoramic view of the Pacific.</p>
-                    <a href="./casa-joya-de-la-montana" class="services-icons__link"></a>
-                    
-                </div>
-                <div class="services-icons__item wow fadeIn" data-wow-delay=".2s">
-                    <span class="services-icons__item__icon "></span>
-                    <h3 class="services-icons__item__title">Casa Athena</h3>
-                    <p class="services-icons__item__intro">This incredible residence is located in front of Plaza de Los Almendros and just steps away from the ocean. </p>
-                    <a href="./casa-athena" class="services-icons__link"></a>
-                </div>
-                <div class="services-icons__item wow fadeIn" data-wow-delay=".2s">
-                    <span class="services-icons__item__icon "></span>
-                    <h3 class="services-icons__item__title">Casa Brewer’s</h3>
-                    <p class="services-icons__item__intro">The house fronts on Paseo del Mar, a seaside pedestrian street along Playa Danta in the center of the Beach Town neighborhood of Las Catalinas.</p>
-                    <a href="./casa-brewers" class="services-icons__link"></a>
-                </div>
+                <?php rewind_posts(); 
+                    $args = array(
+                      'post_type' => 'property',
+                      /*'post__in' => array(134,138,141,144),*/
+                      'posts_per_page'=> 3,
+                      'order' => 'asc'
+                      );
+                    query_posts($args);
+                    ?>
+                    <?php if ( have_posts() ) : while ( have_posts() ) : the_post(); ?>
+                                    <div class="services-icons__item wow fadeIn" data-wow-delay=".2s">
+                                        <span class="services-icons__item__icon ">
+                                            <?php if ( has_post_thumbnail() ) :
+
+                                            $id = get_post_thumbnail_id($post->ID);
+                                            $thumb_url = wp_get_attachment_image_src($id,'thumbnail', true);
+                                            ?>
+                                            
+                                             <img src="<?php echo $thumb_url[0] ?>" alt="img">           
+                                        <?php endif; ?>
+                                        </span>
+                                        <h3 class="services-icons__item__title"><?php the_title(); ?></h3>
+                                        <p class="services-icons__item__intro"><?php the_excerpt(); ?></p>
+                                        <a href="<?php the_permalink(); ?>" class="services-icons__link"></a>
+                                    </div>
+                           
+            
+                        <?php endwhile; ?>
+                        <!-- post navigation -->
+                      
+                    <?php endif; ?>
                 
             </div>
         </div>
@@ -151,14 +145,14 @@ get_header(); ?>
         <div class="cycle-slideshow inner" data-cycle-fx="fade"  data-cycle-timeout="5000"  data-cycle-slides=".testimonials__slide">
             <div class="testimonials__slide">
                 
-                <h6 class="testimonials__title">Lorem ipsum dolor sit amet</h6>
-                <p class="testimonials__info">Lorem ipsum dolor sit amet, consectetuer adipiscing elit, sed diam nonummy nibh euismod tincidunt ut laoreet dolore magna aliquam erat volutpat. Ut wisi enim ad minim veniam, quis nostrud exerci tation nibh euismod tincidunt ut laoreet dolore magna aliquam erat volutpat.</p>
+                <h6 class="testimonials__title">Costa Rica Brokers gives you peace</h6>
+                <p class="testimonials__info">Costa Rica Brokers gives you peace of mind knowing professionals are taking care of your property without disrupting your daily life.</p>
                 <p class="testimonials__author">Gerardo, Avotz</p>
             </div>
             <div class="testimonials__slide">
                 
-                <h6 class="testimonials__title">Consectetuer adipiscing elit</h6>
-                <p class="testimonials__info">Lorem ipsum dolor sit amet, consectetuer adipiscing elit, sed diam nonummy nibh euismod tincidunt ut laoreet dolore magna aliquam erat volutpat. Ut wisi enim ad minim veniam, quis nostrud exerci tation nibh euismod tincidunt ut laoreet dolore magna aliquam erat volutpat.</p>
+                <h6 class="testimonials__title">We will go an extra mile</h6>
+                <p class="testimonials__info">Our experts will create a personalized travel experience; we will go an extra mile to make sure your vacation is a memorable one.</p>
                 <p class="testimonials__author">Alonso, Avotz</p>
             </div>
         </div>

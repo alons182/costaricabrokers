@@ -10,11 +10,14 @@
 get_header(); ?>
 
 	<div id="primary" class="content-area">
-		<main id="main" class="site-main" role="main">
+		<div class="inner">
 
 		<?php
 		while ( have_posts() ) : the_post();
-
+			if ( get_post_type( $post ) == 'property' ) : 
+				 get_template_part( 'template-parts/content', 'property' ); 
+			
+			else :
 			get_template_part( 'template-parts/content', get_post_format() );
 
 			the_post_navigation();
@@ -24,12 +27,14 @@ get_header(); ?>
 				comments_template();
 			endif;
 
+			endif;
+
 		endwhile; // End of the loop.
 		?>
 
-		</main><!-- #main -->
+		</div><!-- #main -->
 	</div><!-- #primary -->
 
 <?php
-get_sidebar();
+/*get_sidebar();*/
 get_footer();

@@ -29,6 +29,7 @@ get_header(); ?>
                             'post_type' => 'property',
                             'paged' => $paged,
                             'posts_per_page' => 3,
+                            'orderby' => 'menu_order',
                             'order' => 'asc'
                             
                           );
@@ -123,13 +124,13 @@ get_header(); ?>
                 
                 <h6 class="testimonials__title">Costa Rica Brokers gives you peace</h6>
                 <p class="testimonials__info">Costa Rica Brokers gives you peace of mind knowing professionals are taking care of your property without disrupting your daily life.</p>
-                <p class="testimonials__author">Gerardo, Avotz</p>
+                <p class="testimonials__author"></p>
             </div>
             <div class="testimonials__slide">
                 
                 <h6 class="testimonials__title">We will go an extra mile</h6>
                 <p class="testimonials__info">Our experts will create a personalized travel experience; we will go an extra mile to make sure your vacation is a memorable one.</p>
-                <p class="testimonials__author">Alonso, Avotz</p>
+                <p class="testimonials__author"></p>
             </div>
         </div>
         

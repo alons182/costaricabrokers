@@ -16,6 +16,16 @@
 
 	<div class="entry-content">
 		<?php
+			if ( has_post_thumbnail() ) :
+
+	  	 	$id = get_post_thumbnail_id($post->ID);
+	  	 	$thumb_url = wp_get_attachment_image_src($id,'full', true);
+	  	 	?>
+	    	
+			<div class="entry-img float-right" style="background-image: url('<?php echo $thumb_url[0] ?>');"></div>
+						
+			<?php endif;
+
 			the_content();
 
 			wp_link_pages( array(

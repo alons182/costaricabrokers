@@ -33,13 +33,7 @@
 			</div>
 			</div>
 			<div class="columns columns-2">
-				<?php echo rwmb_meta( 'rw_video'); ?>
-			</div>
-			<div class="columns columns-2">
-			
-					
-				
-					<?php $photos = rwmb_meta( 'rw_property_thumb', 'type=image&size=large' ); 
+				<?php $photos = rwmb_meta( 'rw_property_thumb', 'type=image&size=large' ); 
 		             if ( $photos ) {
 		                    $i = 0;
 		                ?>
@@ -65,7 +59,11 @@
 						<a class="cycle-next" href="#">&gt;</a>
 						<div class="cycle-pager"></div>
 					</div>
-            	
+
+			</div>
+			<div class="columns columns-2">
+					<?php echo rwmb_meta( 'rw_video'); ?>
+					
 			</div>
 	</div><!-- .entry-content -->
 

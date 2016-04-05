@@ -1497,3 +1497,22 @@ img {
     float: right;
   }
 }
+.pagination {
+  text-align: center;
+}
+.pagination > h2 {
+  display: none;
+}
+.pagination .page-numbers {
+  display: inline-block;
+  background-color: #191f26;
+  color: #fff;
+  padding: 0.8rem;
+  line-height: 18px;
+}
+.pagination .page-numbers.current {
+  background-color: #044902;
+}
+.pagination .page-numbers:hover {
+  background-color: #044902;
+}

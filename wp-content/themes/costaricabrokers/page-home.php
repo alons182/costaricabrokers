@@ -7,52 +7,6 @@ get_header(); ?>
     <section class="search color" id="properties">
         <div class="inner">
 
-            <!--<form action="#" class="search__form">
-                <div class="search__form__row">
-                    <div class="form-group">
-                        <label for="dep-date">Check in</label>
-                        <input type="text" name="dep-date">
-                    </div>
-                    <div class="form-group">
-                        <label for="pick-up">Check out</label>
-                        <select name="pick-up" id="pick-up">
-                            <option value=""></option>
-                            <option value="">lorem</option>
-                            <option value="">ipsum</option>
-                            <option value="">sit amet</option>
-                        </select>
-                    </div>
-                    <div class="form-group">
-                        <label for="drop-off">property to rent</label>
-                        <select name="drop-off" id="drop-off">
-                            <option value=""></option>
-                            <option value="">lorem</option>
-                            <option value="">ipsum</option>
-                            <option value="">sit amet</option>
-                        </select>
-                    </div>
-                </div>
-                <div class="search__form__row">
-                    <div class="form-group spinner">
-                        <label for="people">How many people <small>(including childrens)</small>?</label>
-                        <input type="text" name="people" >
-                    </div>
-                    <div class="form-group radios">
-                        <div>
-                            <input type="radio" name="type" value="return">
-                            <label for="return">lorem</label>
-                        </div>
-                        <div>
-                            <input type="radio" name="type" value="oneway">
-                            <label for="return">ipsum</label>
-                        </div>
-                        
-                    </div> 
-                   <div class="form-group btns">
-                     <button type="submit" class="dark">Book now</button>
-                   </div>                        
-                </div>
-            </form>-->
              <h1>Feature Properties</h1>
         </div>
     </section>
@@ -61,16 +15,35 @@ get_header(); ?>
         <div class="inner">
 
             <div class="services-icons__container">
-                <?php rewind_posts(); 
-                    $args = array(
-                      'post_type' => 'property',
-                      /*'post__in' => array(134,138,141,144),*/
-                      'posts_per_page'=> 3,
-                      'order' => 'asc'
-                      );
-                    query_posts($args);
-                    ?>
-                    <?php if ( have_posts() ) : while ( have_posts() ) : the_post(); ?>
+                <?php 
+                   
+                   if ( get_query_var('paged') ) {
+                              $paged = get_query_var('paged');
+                          } else if ( get_query_var('page') ) {
+                              $paged = get_query_var('page');
+                          } else {
+                              $paged = 1;
+                          } 
+            
+                          $args = array(
+                            'post_type' => 'property',
+                            'paged' => $paged,
+                            'posts_per_page' => 3,
+                            'order' => 'asc'
+                            
+                          );
+                          $temp = $wp_query; 
+                          $wp_query = null;
+                          $wp_query = new WP_Query( $args );
+
+                          if( $wp_query->have_posts() ) {
+                            while( $wp_query->have_posts() ) {
+                              $wp_query->the_post();
+                              
+                            
+
+                              ?>
+                          
                                     <div class="services-icons__item wow fadeIn" data-wow-delay=".2s">
                                         <span class="services-icons__item__icon ">
                                             <?php if ( has_post_thumbnail() ) :
@@ -88,10 +61,16 @@ get_header(); ?>
                                     </div>
                            
             
-                        <?php endwhile; ?>
-                        <!-- post navigation -->
-                      
-                    <?php endif; ?>
+                         <?php
+                            }               
+                          }
+                        ?>
+                       
+                   
+                    <?php 
+                        $wp_query = null; 
+                        $wp_query = $temp;  // Reset
+                      ?>
                 
             </div>
         </div>

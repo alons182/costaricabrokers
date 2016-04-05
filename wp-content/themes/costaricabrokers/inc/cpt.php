@@ -63,6 +63,5 @@ function costaricabrokers_register_meta_boxes( $meta_boxes )
     );
 
 
-
     return $meta_boxes;
 }

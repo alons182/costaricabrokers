@@ -27,7 +27,7 @@
                       
                     <?php endif; ?>
                 </article>
-                <article class="footer__contact">
+                <article id="contact" class="footer__contact">
                     <h6>Need Help?</h6>
                     <p>Contac us for any inquire</p>
                     <p class="footer__contact__data">

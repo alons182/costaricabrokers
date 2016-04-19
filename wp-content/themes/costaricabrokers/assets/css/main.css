@@ -601,7 +601,7 @@ h3,
 h4,
 h5 {
   margin-top: 0;
-  font-family: 'Montserrat', sans-serif;
+/*font-family 'Montserrat', sans-serif*/
   font-weight: normal;
 }
 h1 {
@@ -853,6 +853,9 @@ img {
   padding: 6.5rem 0 1rem;
   color: #fff;
   text-align: center;
+}
+.search h1 {
+  text-transform: uppercase;
 }
 .search__form__row {
   margin-bottom: 2rem;

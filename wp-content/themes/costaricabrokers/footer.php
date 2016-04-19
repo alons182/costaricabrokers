@@ -29,7 +29,7 @@
                 </article>
                 <article id="contact" class="footer__contact">
                     <h6>Need Help?</h6>
-                    <p>Contac us for any inquire</p>
+                    <p>Contac us for any query</p>
                     <p class="footer__contact__data">
                         <i class="icon-phone"></i>
                         +506 4702-7098

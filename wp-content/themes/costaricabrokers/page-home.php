@@ -7,7 +7,7 @@ get_header(); ?>
     <section class="search color" id="properties">
         <div class="inner">
 
-             <h1>Get inspire</h1>
+             <h1>Get inspired</h1>
         </div>
     </section>
 	<section class="services-icons white">

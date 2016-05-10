@@ -6,7 +6,7 @@
 celeste = #1FAEC0
 oscuro = #191F26
 verde = #044902
-
+gris = #424446
 *
 	box-sizing border-box
 
@@ -41,7 +41,8 @@ h1
 img
 	max-width 100%
 	height auto
-
+p 
+	margin-top 0
 .right
 	right 0
 .left
@@ -66,12 +67,13 @@ img
 .txt-center
 	text-align center
 .color 
-	background-color verde
+	background-color gris
 .dark
 	background-color oscuro
 .white
 	background-color white
-
+.columns-1
+	text-align center
 .inner
 	max-width 1170px
 	margin 0 auto
@@ -87,8 +89,8 @@ img
 		
 
 .header
-	position fixed
-	height 80px 
+	position relative //fixed
+	height 84px 
 	left 0
 	top 0
 	right 0
@@ -138,6 +140,8 @@ img
 		font-size 100%
 @media screen and (min-width: 980px)
 	.header
+		&--fixed
+			position fixed
 		&__menu 
 			display block
 			float right
@@ -245,7 +249,7 @@ img
 			padding-top 35%	*/
 .home
 	.main 
-		padding-top 3rem
+		padding-top 0//3rem
 	.search
 		padding 2rem 0 1rem			 
 .search
@@ -539,11 +543,11 @@ img
 		text-transform uppercase
 		margin-top 0
 		margin-bottom 1.5rem
-		&:before
+		/*&:before
 			content '\f10d'
 			font-family 'icomoon'
 			margin-right .5rem
-			color verde
+			color verde*/
 			
 .partners
 	text-align center
@@ -575,14 +579,16 @@ img
 .slider
 	position relative
 	width 100%//450px
-	height 300px
+	height 320px
 	text-align center
+	overflow hidden
 	p 
 		display none
 @media screen and (min-width: 768px)
 	.slider
 		width 450px
 		float right
+		margin-left 2rem
 	.gallery
 		width 450px
 		&-item 
@@ -602,7 +608,7 @@ img
 	right 1rem
 .cycle-pager
 	position absolute
-	bottom 0
+	bottom 1rem
 	z-index 999
 	text-align center
 	left 0
@@ -630,7 +636,7 @@ img
 	.entry-img
 		width 450px 
 .main 
-	padding-top 5rem
+	padding-top .5rem
 .footer 
 	background-color oscuro
 	color white
@@ -783,7 +789,7 @@ img
 	.type-property
 		iframe
 			width 450px
-			float left
+			//float left
 
 .pagination
 	text-align center

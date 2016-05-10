@@ -85,15 +85,15 @@
     
     //SCROLL WINDOW FUNCTIONALITY
 
-    /*$(window).scroll(function () {
-          if ($(this).scrollTop() > 50) {
+    $(window).scroll(function () {
+          if ($(this).scrollTop() > 84) {
               $('.header').addClass("header--fixed");
           } else {
               $('.header').removeClass("header--fixed");
           }
       });
 
-    
+    /*
 
     $(window).load(function() {
      

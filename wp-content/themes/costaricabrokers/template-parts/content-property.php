@@ -16,24 +16,7 @@
 
 	<div class="entry-content">
 		<?php
-			the_content();
-
-			
-		?>
-		<div class="tabs">
-			<div class="tab"><input id="tab-features" checked="checked" name="tab-group-1" type="radio" /><label for="tab-features">Features Include</label>
-			<div class="content">
-				<?php echo rwmb_meta( 'rw_features'); ?>
-			</div>
-			</div>
-			<div class="tab"><input id="tab-bed" name="tab-group-1" type="radio" /><label for="tab-bed">Bed Distribution</label>
-			<div class="content">
-				<?php echo rwmb_meta( 'rw_beddistribution'); ?>
-			</div>
-			</div>
-			</div>
-			<div class="columns columns-2">
-				<?php $photos = rwmb_meta( 'rw_property_thumb', 'type=image&size=large' ); 
+		   $photos = rwmb_meta( 'rw_property_thumb', 'type=image&size=large' ); 
 		             if ( $photos ) {
 		                    $i = 0;
 		                ?>
@@ -59,12 +42,28 @@
 						<a class="cycle-next" href="#">&gt;</a>
 						<div class="cycle-pager"></div>
 					</div>
+			<?php
+			the_content();
 
+			
+		?>
+		<div class="tabs">
+			<div class="tab"><input id="tab-features" checked="checked" name="tab-group-1" type="radio" /><label for="tab-features">Features Include</label>
+			<div class="content">
+				<?php echo rwmb_meta( 'rw_features'); ?>
 			</div>
-			<div class="columns columns-2">
-					<?php echo rwmb_meta( 'rw_video'); ?>
+			</div>
+			<div class="tab"><input id="tab-bed" name="tab-group-1" type="radio" /><label for="tab-bed">Bed Distribution</label>
+			<div class="content">
+				<?php echo rwmb_meta( 'rw_beddistribution'); ?>
+			</div>
+			</div>
+		</div>
+		
+		<div class="columns columns-1">
+				<?php echo rwmb_meta( 'rw_video'); ?>
 					
-			</div>
+		</div>
 	</div><!-- .entry-content -->
 
 	

@@ -140,7 +140,8 @@ get_header(); ?>
             <h2 class="partners__title">Our Partners</h2>
             <a href="http://www.pexscr.com/" class="partners__link" target="_blank"><img src="<?php echo get_template_directory_uri();?>/img/partners/PEXS-Costa-Rica-Logo.jpg" alt="pexscr"></a>
              <a href="http://marinacharterscr.com/" class="partners__link" target="_blank"><img src="<?php echo get_template_directory_uri();?>/img/partners/marina-charters.png" alt="Marina Charters"></a>
-             <a href="http://caturgua.com/" class="partners__link" target="_blank"><img src="<?php echo get_template_directory_uri();?>/img/partners/Guanacaste-caturga.png" alt="Guanacaste Caturga"></a>
+             <a href="http://caturgua.com/" class="partners__link" target="_blank"><img src="<?php echo get_template_directory_uri();?>/img/partners/Guanacaste.png" alt="Guanacaste Caturga"></a>
+             <a href="http://caturgua.com/" class="partners__link" target="_blank"><img src="<?php echo get_template_directory_uri();?>/img/partners/caturga.png" alt="Guanacaste Caturga"></a>
             
         </div>
     </section>

@@ -579,7 +579,7 @@ table {
 }
 body {
   font-family: 'Raleway', sans-serif;
-  font-size: 80%;
+  font-size: 14px;
   line-height: 30px;
   color: #191f26;
 }
@@ -705,7 +705,6 @@ p {
 .header__menu__link {
   display: block;
   padding: 0.5rem 15px;
-  font-family: 'Montserrat', sans-serif;
   text-transform: uppercase;
   color: #191f26;
   border-bottom: 1px solid rgba(0,0,0,0.15);
@@ -723,7 +722,7 @@ p {
 }
 @media screen and (min-width: 768px) {
   body {
-    font-size: 100%;
+    font-size: 16px;
   }
 }
 @media screen and (min-width: 980px) {
@@ -760,7 +759,7 @@ p {
 @media screen and (min-width: 1175px) {
   .header__menu a,
   .header__menu__link {
-    padding: 0 0.4rem;
+    padding: 0 0.8rem;
   }
   .inner {
     padding-left: 0;

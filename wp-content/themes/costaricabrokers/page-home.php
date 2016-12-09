@@ -67,9 +67,9 @@ get_header(); ?>
                                         <a href="http://bookings.costarica-brokers.com/Unit/Details/110413" class="services-icons__link"></a>
                                         <?php elseif($post->post_title == "Casa Lina") : ?>
                                            <a href="http://bookings.costarica-brokers.com/Unit/Details/110410" class="services-icons__link"></a>
-                                          <?php */ elseif($post->post_title == "Villa Tesora") : ?>
+                                          <?php  elseif($post->post_title == "Villa Tesora") : ?>
                                              <a href="http://bookings.costarica-brokers.com/Unit/Details/120068" class="services-icons__link"></a>
-                                           <?php else : ?>
+                                           <?php */else : ?>
                                             <a href="#" class="services-icons__link"></a>
                                            <?php endif ?> 
 

@@ -28,7 +28,7 @@ get_header(); ?>
                           $args = array(
                             'post_type' => 'property',
                             'paged' => $paged,
-                            'posts_per_page' => 3,
+                            'posts_per_page' => 4,
                             'orderby' => 'menu_order',
                             'order' => 'asc'
                             
@@ -57,12 +57,18 @@ get_header(); ?>
                                         <h3 class="services-icons__item__title"><?php the_title(); ?></h3>
                                         <p class="services-icons__item__intro"><?php the_excerpt(); ?></p>
                                         
-                                       <?php if($post->post_title == "Blue Villa") : ?>
+                                       <?php if($post->post_title == "Hacienda Montezuma") : ?>
+                                        <a href="http://bookings.costarica-brokers.com/Unit/Details/122935" class="services-icons__link"></a>
+                                        <?php elseif($post->post_title == "Azul Paraiso 3-B") : ?>
+                                          <a href="http://bookings.costarica-brokers.com/Unit/Details/124154" class="services-icons__link"></a>
+                                       <?php elseif($post->post_title == "Azul Paraiso 9-A") : ?>
+                                          <a href="http://bookings.costarica-brokers.com/Unit/Details/124173" class="services-icons__link"></a>
+                                       <?php  /*if($post->post_title == "Blue Villa") : ?>
                                         <a href="http://bookings.costarica-brokers.com/Unit/Details/110413" class="services-icons__link"></a>
                                         <?php elseif($post->post_title == "Casa Lina") : ?>
                                            <a href="http://bookings.costarica-brokers.com/Unit/Details/110410" class="services-icons__link"></a>
-                                          <?php elseif($post->post_title == "Casa Jewel") : ?>
-                                             <a href="http://bookings.costarica-brokers.com/Unit/Details/112941" class="services-icons__link"></a>
+                                          <?php */ elseif($post->post_title == "Villa Tesora") : ?>
+                                             <a href="http://bookings.costarica-brokers.com/Unit/Details/120068" class="services-icons__link"></a>
                                            <?php else : ?>
                                             <a href="#" class="services-icons__link"></a>
                                            <?php endif ?> 

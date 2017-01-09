@@ -43,6 +43,20 @@
         next: '.cycle-next',
         prev: '.cycle-prev'
       });
+      menu.find(".menu-item-has-children").hoverIntent({
+          over: function() {
+
+                $(this).find(">.sub-menu").slideDown(200 );
+                
+              },
+          out:  function() {
+                
+                $(this).find(">.sub-menu").slideUp(200);
+               
+              },
+          timeout: 200
+
+           });
       /*menuContainer.hoverIntent({
         over: function() {
               menu.slideDown(200);

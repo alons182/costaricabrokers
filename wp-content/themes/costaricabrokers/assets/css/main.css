@@ -1002,6 +1002,9 @@ p {
   padding-top: 4rem;
   padding-bottom: 3rem;
 }
+.services-icons__container > div {
+  position: relative;
+}
 .services-icons__item {
   width: 100%;
   padding: 0 0 2rem;
@@ -1069,9 +1072,6 @@ p {
     -webkit-flex-wrap: wrap;
     -ms-flex-wrap: wrap;
     flex-wrap: wrap;
-  }
-  .services-icons__container > div {
-    position: relative;
   }
   .services-icons__item {
     width: 45%;

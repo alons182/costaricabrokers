@@ -738,6 +738,7 @@ p {
   .header__menu .menu-item,
   .header__menu__item {
     display: inline-block;
+    position: relative;
   }
   .header__menu .current a {
     color: #191f26;
@@ -754,6 +755,8 @@ p {
   }
   .header__menu .sub-menu {
     display: none;
+    position: absolute;
+    top: 100px;
   }
   .header__btn-menu {
     display: none;

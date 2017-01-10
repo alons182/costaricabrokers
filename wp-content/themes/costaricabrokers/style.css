@@ -95,11 +95,12 @@ p{margin-top:0}
 @media screen and (min-width:768px){body{font-size:16px}}
 @media screen and (min-width:980px){.header--fixed{position:fixed}
 .header__menu{display:block;float:right;position:static;line-height:80px}
-.header__menu .menu-item,.header__menu__item{display:inline-block}
+.header__menu .menu-item,.header__menu__item{display:inline-block;position:relative}
 .header__menu .current a{color:#191f26}
 .header__menu a,.header__menu__link{border:0;padding:0 .4rem;color:#727679}
 .header__menu a:hover,.header__menu__link:hover{color:#191f26}
-.header__btn-menu,.header__menu .sub-menu{display:none}}
+.header__menu .sub-menu{display:none;position:absolute;top:100px}
+.header__btn-menu{display:none}}
 @media screen and (min-width:1175px){.header__menu a,.header__menu__link{padding:0 .8rem}
 .inner{padding-left:0;padding-right:0}}
 .intro{background:url(./img/keyvisual.jpg) 50% 0 no-repeat fixed;height:100vh;overflow:hidden;width:100%;display:block}

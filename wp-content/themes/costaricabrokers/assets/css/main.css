@@ -1070,6 +1070,9 @@ p {
     -ms-flex-wrap: wrap;
     flex-wrap: wrap;
   }
+  .services-icons__container > div {
+    position: relative;
+  }
   .services-icons__item {
     width: 45%;
   }

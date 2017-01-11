@@ -202,6 +202,7 @@ p{margin-top:0}
 @media screen and (min-width:768px){.entry-img{width:450px}}
 .main{padding-top:.5rem}
 .footer{background-color:#191f26;color:#fff;text-align:center;padding-top:2rem}
+.footer .budget-logo{background-color:#fff;width:200px;display:block}
 .footer__info h6{text-transform:uppercase;margin-top:0;font-size:1rem;margin-bottom:1rem}
 .footer__info article{margin-bottom:2rem}
 .footer__contact i{margin-right:.5rem;font-size:2rem;vertical-align:middle}
@@ -214,6 +215,7 @@ p{margin-top:0}
 .footer__menu .menu-item,.footer__menu__item{display:inline-block;vertical-align:top}
 .footer__menu a,.footer__menu__link{display:block;color:#727679;padding:.5rem}
 .footer__menu a:hover,.footer__menu__link:hover{color:#fff}
+.footer__menu .sub-menu{display:none}
 .footer__copyright{padding-top:1rem;border-top:1px solid rgba(255,255,255,.07);-webkit-box-shadow:0 -1px 0 rgba(0,0,0,.5);box-shadow:0 -1px 0 rgba(0,0,0,.5)}
 .footer__copyright p{margin:0}
 .footer__copyright a{color:#727679}

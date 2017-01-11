@@ -45,6 +45,7 @@
                      <a href="#" class="footer__social__link"><i class="icon-twitter"></i></a>
                      <a href="#" class="footer__social__link"><i class="icon-google-plus"></i></a>
                      <a href="#" class="footer__social__link"><i class="icon-youtube"></i></a>
+                     <a href="https://www.budget.com/budgetWeb/home/home.ex?HP" class="budget-logo" target="_blank"><img src="https://www.budget.com/budgetWeb/images/newlayout/budgetLogoNew1.png" alt="budgetLogo"></a>
                 </article>
             </div>
             <div class="footer__copyright">

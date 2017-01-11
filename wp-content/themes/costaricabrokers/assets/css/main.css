@@ -1391,6 +1391,11 @@ p {
   text-align: center;
   padding-top: 2rem;
 }
+.footer .budget-logo {
+  background-color: #fff;
+  width: 200px;
+  display: block;
+}
 .footer__info h6 {
   text-transform: uppercase;
   margin-top: 0;
@@ -1446,6 +1451,9 @@ p {
 .footer__menu a:hover,
 .footer__menu__link:hover {
   color: #fff;
+}
+.footer__menu .sub-menu {
+  display: none;
 }
 .footer__copyright {
   padding-top: 1rem;

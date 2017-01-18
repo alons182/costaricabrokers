@@ -1592,6 +1592,7 @@ p {
   padding: 0.5rem;
 }
 .renta input[type="text"],
+.renta input[type="email"],
 .renta textarea {
   width: 100%;
   height: 32px;

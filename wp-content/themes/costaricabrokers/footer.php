@@ -65,6 +65,26 @@
             </div>
         </div>
     </footer>
+    <div class="rent-a-cart-button">
+        <a href="#renta" class="btn-renta-car">Rent a car</a>
+    </div>
+    <div id="renta" class="renta white-popup mfp-hide mfp-with-anim">
+      
+      <?php rewind_posts(); ?>
+      <?php query_posts( 'post_type=page&page_id=507' ); ?>
+        <?php if ( have_posts() ) : while ( have_posts() ) : the_post(); ?>
+
+               <?php the_title( '<h1 class="entry-title">', '</h1>' ); ?>
+             <?php the_content(); ?>
+
+            <?php endwhile; ?>
+            <!-- post navigation -->
+          
+        <?php endif; ?>
+      
+            
+   </div>
+
 
 <?php wp_footer(); ?>
 

@@ -1280,7 +1280,7 @@ p {
 @media screen and (min-width: 980px) {
   .partners__link {
     padding: 0.5rem 0.5rem;
-    width: 18%;
+    width: 15%;
     display: inline-block;
   }
   .partners__link img {
@@ -1575,4 +1575,19 @@ p {
 .single-property .services-icons__container {
   border-top: 1px solid #ccc;
   padding-top: 1rem;
+}
+.rent-a-cart-button {
+  position: fixed;
+  top: 50%;
+  right: -27px;
+  -webkit-transform: rotate(90deg);
+  -moz-transform: rotate(90deg);
+  -o-transform: rotate(90deg);
+  -ms-transform: rotate(90deg);
+  transform: rotate(90deg);
+}
+.rent-a-cart-button .btn-renta-car {
+  background-color: #ed5505;
+  color: #fff;
+  padding: 0.5rem;
 }

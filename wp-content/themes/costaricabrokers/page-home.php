@@ -158,6 +158,9 @@ get_header(); ?>
              <a href="http://marinacharterscr.com/" class="partners__link" target="_blank"><img src="<?php echo get_template_directory_uri();?>/img/partners/marina-charters.png" alt="Marina Charters"></a>
              <a href="http://caturgua.com/" class="partners__link" target="_blank"><img src="<?php echo get_template_directory_uri();?>/img/partners/Guanacaste.png" alt="Guanacaste Caturga"></a>
              <a href="http://caturgua.com/" class="partners__link" target="_blank"><img src="<?php echo get_template_directory_uri();?>/img/partners/caturga.png" alt="Guanacaste Caturga"></a>
+             <a href="#" class="partners__link" target="_blank"><img src="<?php echo get_template_directory_uri();?>/img/partners/Jo-Logo.jpg" alt="Johansen"></a>
+             <a href="https://www.budget.com/budgetWeb/home/home.ex?HP" class="partners__link budget-logo" target="_blank"><img src="https://www.budget.com/budgetWeb/images/newlayout/budgetLogoNew1.png" alt="budgetLogo"></a>
+            
             
         </div>
     </section>

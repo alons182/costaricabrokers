@@ -181,7 +181,7 @@ p{margin-top:0}
 .partners__link{display:block;margin-bottom:1rem}
 .partners__link img{-webkit-transition:all .3s ease;-moz-transition:all .3s ease;-o-transition:all .3s ease;-ms-transition:all .3s ease;transition:all .3s ease}
 .partners__link:hover img{-webkit-transform:scale(1.3);-moz-transform:scale(1.3);-o-transform:scale(1.3);-ms-transform:scale(1.3);transform:scale(1.3)}
-@media screen and (min-width:980px){.partners__link{padding:.5rem;width:18%;display:inline-block}
+@media screen and (min-width:980px){.partners__link{padding:.5rem;width:15%;display:inline-block}
 .partners__link img{width:100%}}
 .gallery{width:100%}
 .gallery img{width:100%;display:block}
@@ -241,6 +241,8 @@ p{margin-top:0}
 .pagination .page-numbers{display:inline-block;background-color:#191f26;color:#fff;padding:.8rem;line-height:18px}
 .pagination .page-numbers.current,.pagination .page-numbers:hover{background-color:#044902}
 .single-property .services-icons__container{border-top:1px solid #ccc;padding-top:1rem}
+.rent-a-cart-button{position:fixed;top:50%;right:-27px;-webkit-transform:rotate(90deg);-moz-transform:rotate(90deg);-o-transform:rotate(90deg);-ms-transform:rotate(90deg);transform:rotate(90deg)}
+.rent-a-cart-button .btn-renta-car{background-color:#ed5505;color:#fff;padding:.5rem}
 .mfp-bg{top:0;left:0;width:100%;height:100%;z-index:1042;overflow:hidden;position:fixed;background:#0b0b0b;opacity:.8;filter:alpha(opacity=80)}
 .mfp-wrap{top:0;left:0;width:100%;height:100%;z-index:1043;position:fixed;outline:0!important;-webkit-backface-visibility:hidden}
 .mfp-container{text-align:center;position:absolute;width:100%;height:100%;left:0;top:0;padding:0 8px;-webkit-box-sizing:border-box;-moz-box-sizing:border-box;box-sizing:border-box}

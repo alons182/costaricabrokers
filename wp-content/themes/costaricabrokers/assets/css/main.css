@@ -1591,3 +1591,17 @@ p {
   color: #fff;
   padding: 0.5rem;
 }
+.renta input[type="text"],
+.renta textarea {
+  width: 100%;
+  height: 32px;
+}
+.renta textarea {
+  height: 90px;
+}
+.renta .wpcf7-submit {
+  background-color: #ed5505;
+  color: #fff;
+  padding: 0.5rem;
+  border: none;
+}

@@ -93,7 +93,7 @@ p{margin-top:0}
 .header__menu a,.header__menu__link{display:block;padding:.5rem 15px;text-transform:uppercase;color:#191f26;border-bottom:1px solid rgba(0,0,0,.15)}
 .header__btn-menu{position:absolute;top:0;right:16px;background-color:transparent;color:#044902;font-size:2rem;line-height:80px;border:0;outline:0}
 @media screen and (min-width:768px){body{font-size:16px}}
-@media screen and (min-width:980px){.header--fixed{position:fixed}
+@media screen and (min-width:1150px){.header--fixed{position:fixed}
 .header__menu{display:block;float:right;position:static;line-height:80px}
 .header__menu .menu-item,.header__menu__item{display:inline-block;position:relative}
 .header__menu .current a{color:#191f26}

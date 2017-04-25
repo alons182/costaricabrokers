@@ -41,15 +41,15 @@
                 </article>
                 <article class="footer__social">
                      <h6>Follow us</h6>
-                     <a href="#" class="footer__social__link"><i class="icon-facebook"></i></a>
-                     <a href="#" class="footer__social__link"><i class="icon-twitter"></i></a>
-                     <a href="#" class="footer__social__link"><i class="icon-google-plus"></i></a>
-                     <a href="#" class="footer__social__link"><i class="icon-youtube"></i></a>
-                     <a href="#renta" class="budget-logo" target="_blank"><img src="https://www.budget.com/budgetWeb/images/newlayout/budgetLogoNew1.png" alt="budgetLogo"></a>
+                     <a href="https://www.facebook.com/BrokersCR/" class="footer__social__link" target="_blank"><i class="icon-facebook"></i></a>
+                     <a href="https://www.twitter.com/brokerscr" class="footer__social__link" target="_blank"><i class="icon-twitter"></i></a>
+                     <!-- <a href="#" class="footer__social__link"><i class="icon-google-plus"></i></a> -->
+                     <a href="https://www.instagram.com/brokersCR/" class="footer__social__link" target="_blank"><i class="fa fa-instagram"></i></a>
+                     <a href="https://www.budget.co.cr/rental-hermosa-guanacaste/" class="budget-logo" target="_blank"><img src="https://www.budget.com/budgetWeb/images/newlayout/budgetLogoNew1.png" alt="budgetLogo"></a>
                 </article>
             </div>
             <div class="footer__copyright">
-                <p>Copyright 2016, <a href="https://www.avotz.com/">Avotz</a>. All rights reserved. </p>
+                <p>Copyright 2016-<?php echo date('Y'); ?>, <a href="https://www.avotz.com/">Avotz</a>. All rights reserved. </p>
                  <?php
 					wp_nav_menu(
 						 array(
@@ -66,7 +66,7 @@
         </div>
     </footer>
     <div class="rent-a-cart-button">
-        <a href="#renta" class="btn-renta-car">Rent a car</a>
+        <a href="https://www.budget.co.cr/rental-hermosa-guanacaste/" class="btn-renta-car" target="_blank">Rent a car</a>
     </div>
     <div id="renta" class="renta white-popup mfp-hide mfp-with-anim">
       

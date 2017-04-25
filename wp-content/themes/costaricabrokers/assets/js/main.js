@@ -12,7 +12,7 @@
             menu.toggle();
            
         });
-  $('.btn-renta-car').magnificPopup({
+  /*$('.btn-renta-car').magnificPopup({
         type: 'inline',
         midClick: true,
         removalDelay: 500, //delay removal by X to allow out-animation
@@ -51,7 +51,7 @@
         }
 
        
-    });
+    });*/
    $('.gallery a').magnificPopup({
 
           type:'image',

@@ -158,6 +158,7 @@ p{margin-top:0}
 @media screen and (min-width:980px){.call{text-align:center;padding:1.8rem 0}
 .call p{width:25%}
 .call__btn{margin-top:.5rem;font-size:1.5rem;padding:1rem 2rem;background-color:#5ac6a8;vertical-align:middle}}
+.services-title{text-align:center;font-weight:700;text-transform:uppercase;padding-top:.8rem}
 .services-box__item{width:100%}
 .services-box__item__img{position:relative}
 .services-box__item__img img{width:100%;display:block}
@@ -213,6 +214,7 @@ p{margin-top:0}
 .footer__social__link{display:inline-block;padding:.5rem;font-size:1.3rem;color:#fff;background-color:#727679;line-height:0;border-radius:50%;margin:0 .5rem 1rem}
 .footer__social__link:hover{background-color:#044902;color:#fff}
 .footer__social__link:first-of-type{padding:.5rem .75rem}
+.footer__social__link:nth-last-of-type(2){padding:.55rem}
 .footer__menu .menu-item,.footer__menu__item{display:inline-block;vertical-align:top}
 .footer__menu a,.footer__menu__link{display:block;color:#727679;padding:.5rem}
 .footer__menu a:hover,.footer__menu__link:hover{color:#fff}

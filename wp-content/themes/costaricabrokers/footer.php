@@ -35,7 +35,7 @@
                         +506 4702-7098
                     </p>
                      <p class="footer__contact__data">
-                        <i class="icon-envelope-o"></i>
+                        <a href="mailto::info@costarica-brokers.com"><i class="icon-envelope-o"></i></a>
                         <a href="mailto::info@costarica-brokers.com">info@costarica-brokers.com</a>
                     </p>
                 </article>
@@ -45,7 +45,7 @@
                      <a href="https://www.twitter.com/brokerscr" class="footer__social__link" target="_blank"><i class="icon-twitter"></i></a>
                      <!-- <a href="#" class="footer__social__link"><i class="icon-google-plus"></i></a> -->
                      <a href="https://www.instagram.com/brokersCR/" class="footer__social__link" target="_blank"><i class="fa fa-instagram"></i></a>
-                     <a href="https://www.budget.co.cr/rental-hermosa-guanacaste/" class="budget-logo" target="_blank"><img src="https://www.budget.com/budgetWeb/images/newlayout/budgetLogoNew1.png" alt="budgetLogo"></a>
+                     <!-- <a href="https://www.budget.co.cr/rental-hermosa-guanacaste/" class="budget-logo" target="_blank"><img src="https://www.budget.com/budgetWeb/images/newlayout/budgetLogoNew1.png" alt="budgetLogo"></a> -->
                 </article>
             </div>
             <div class="footer__copyright">

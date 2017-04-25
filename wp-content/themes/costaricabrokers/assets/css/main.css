@@ -1128,6 +1128,12 @@ p {
     vertical-align: middle;
   }
 }
+.services-title {
+  text-align: center;
+  font-weight: bold;
+  text-transform: uppercase;
+  padding-top: 0.8rem;
+}
 .services-box__item {
   width: 100%;
 }
@@ -1440,6 +1446,9 @@ p {
 }
 .footer__social__link:first-of-type {
   padding: 0.5rem 0.75rem;
+}
+.footer__social__link:nth-last-of-type(2) {
+  padding: 0.55rem;
 }
 .footer__menu .menu-item,
 .footer__menu__item {

@@ -95,6 +95,7 @@ get_header(); ?>
             <a href="#contact" class="call__btn wow fadeInRight color">Contact Us</a>
         </div>
     </section>
+    <h3 class="services-title">Specialty Concierge</h3>
     <section class="services-box" id="services">
 
               <?php rewind_posts(); 
@@ -138,7 +139,7 @@ get_header(); ?>
         <div class="cycle-slideshow inner" data-cycle-fx="fade"  data-cycle-timeout="5000"  data-cycle-slides=".testimonials__slide">
             <div class="testimonials__slide">
                 
-                <h6 class="testimonials__title">Costa Rica Brokers gives you peace</h6>
+                <h6 class="testimonials__title">Costa Rica Brokers gives you peace of mind</h6>
                 <p class="testimonials__info">Costa Rica Brokers gives you peace of mind knowing professionals are taking care of your property without disrupting your daily life.</p>
                 <p class="testimonials__author"></p>
             </div>
@@ -158,7 +159,7 @@ get_header(); ?>
              <a href="http://marinacharterscr.com/" class="partners__link" target="_blank"><img src="<?php echo get_template_directory_uri();?>/img/partners/marina-charters.png" alt="Marina Charters"></a>
              <a href="http://caturgua.com/" class="partners__link" target="_blank"><img src="<?php echo get_template_directory_uri();?>/img/partners/Guanacaste.png" alt="Guanacaste Caturga"></a>
              <a href="http://caturgua.com/" class="partners__link" target="_blank"><img src="<?php echo get_template_directory_uri();?>/img/partners/caturga.png" alt="Guanacaste Caturga"></a>
-             <a href="#" class="partners__link" target="_blank"><img src="<?php echo get_template_directory_uri();?>/img/partners/Jo-Logo.jpg" alt="Johansen"></a>
+             <a href="http://www.johansens.com/north-america/costa-rica/" class="partners__link" target="_blank"><img src="<?php echo get_template_directory_uri();?>/img/partners/Jo-Logo.jpg" alt="Johansen"></a>
              <a href="https://www.budget.co.cr/rental-hermosa-guanacaste/" class="partners__link budget-logo" target="_blank"><img src="https://www.budget.com/budgetWeb/images/newlayout/budgetLogoNew1.png" alt="budgetLogo"></a>
             
             

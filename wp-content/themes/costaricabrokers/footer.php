@@ -27,7 +27,7 @@
                       
                     <?php endif; ?>
                 </article>
-                <article id="contact" class="footer__contact">
+                <article id="need" class="footer__contact">
                     <h6>Need Help?</h6>
                     <p>Contac us for any query</p>
                     <p class="footer__contact__data">
@@ -68,10 +68,10 @@
     <div class="rent-a-cart-button">
         <a href="https://www.budget.co.cr/rental-hermosa-guanacaste/" class="btn-renta-car" target="_blank">Rent a car</a>
     </div>
-    <div id="renta" class="renta white-popup mfp-hide mfp-with-anim">
+    <div id="contact" class="contact white-popup mfp-hide mfp-with-anim">
       
       <?php rewind_posts(); ?>
-      <?php query_posts( 'post_type=page&page_id=507' ); ?>
+      <?php query_posts( 'post_type=page&page_id=518' ); ?>
         <?php if ( have_posts() ) : while ( have_posts() ) : the_post(); ?>
 
                <?php the_title( '<h1 class="entry-title">', '</h1>' ); ?>

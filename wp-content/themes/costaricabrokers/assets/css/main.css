@@ -1114,17 +1114,17 @@ p {
 }
 @media screen and (min-width: 980px) {
   .call {
-    text-align: left;
+    text-align: center;
     padding: 1.8rem 0;
   }
   .call p {
-    width: 70%;
+    width: 25%;
   }
   .call__btn {
     margin-top: 0.5rem;
     font-size: 1.5rem;
     padding: 1rem 2rem;
-    float: right;
+    background-color: #5ac6a8;
     vertical-align: middle;
   }
 }

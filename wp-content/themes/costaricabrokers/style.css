@@ -155,9 +155,9 @@ p{margin-top:0}
 .call p{display:inline-block;width:100%;padding:0;color:#fff;font-size:1.5rem}
 .call__btn{font-size:1.5rem;padding:1rem 2rem;text-transform:uppercase;color:#fff;display:inline-block;font-weight:700}
 .call__btn:hover{background-color:#fff;color:#191f26}
-@media screen and (min-width:980px){.call{text-align:left;padding:1.8rem 0}
-.call p{width:70%}
-.call__btn{margin-top:.5rem;font-size:1.5rem;padding:1rem 2rem;float:right;vertical-align:middle}}
+@media screen and (min-width:980px){.call{text-align:center;padding:1.8rem 0}
+.call p{width:25%}
+.call__btn{margin-top:.5rem;font-size:1.5rem;padding:1rem 2rem;background-color:#5ac6a8;vertical-align:middle}}
 .services-box__item{width:100%}
 .services-box__item__img{position:relative}
 .services-box__item__img img{width:100%;display:block}

@@ -91,7 +91,7 @@ get_header(); ?>
     </section>
     <section class="call dark">
         <div class="inner">
-            <p class="wow fadeInLeft">Like what you see? Are you ready to stand out? You know what to do.</p>
+            <p class="wow fadeInLeft">Like what you see?</p>
             <a href="#contact" class="call__btn wow fadeInRight color">Contact Us</a>
         </div>
     </section>

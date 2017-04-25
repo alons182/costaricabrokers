@@ -773,7 +773,7 @@ p {
 @media screen and (min-width: 1175px) {
   .header__menu a,
   .header__menu__link {
-    padding: 0 0.8rem;
+    padding: 0 0.4rem;
   }
   .inner {
     padding-left: 0;
@@ -1592,15 +1592,20 @@ p {
   color: #fff;
   padding: 0.5rem;
 }
+.contact input[type="text"],
 .renta input[type="text"],
+.contact input[type="email"],
 .renta input[type="email"],
+.contact textarea,
 .renta textarea {
   width: 100%;
   height: 32px;
 }
+.contact textarea,
 .renta textarea {
   height: 90px;
 }
+.contact .wpcf7-submit,
 .renta .wpcf7-submit {
   background-color: #ed5505;
   color: #fff;

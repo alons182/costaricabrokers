@@ -766,6 +766,9 @@ p {
     width: 220px;
     line-height: 40px;
   }
+  .header__menu .sub-menu li {
+    display: block;
+  }
   .header__btn-menu {
     display: none;
   }

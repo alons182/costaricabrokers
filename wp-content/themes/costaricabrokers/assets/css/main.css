@@ -1608,6 +1608,10 @@ p {
 .renta input[type="text"],
 .contact input[type="email"],
 .renta input[type="email"],
+.contact input[type="number"],
+.renta input[type="number"],
+.contact select,
+.renta select,
 .contact textarea,
 .renta textarea {
   width: 100%;

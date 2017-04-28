@@ -246,7 +246,7 @@ p{margin-top:0}
 .single-property .services-icons__container{border-top:1px solid #ccc;padding-top:1rem}
 .rent-a-cart-button{position:fixed;top:50%;right:-27px;-webkit-transform:rotate(90deg);-moz-transform:rotate(90deg);-o-transform:rotate(90deg);-ms-transform:rotate(90deg);transform:rotate(90deg)}
 .rent-a-cart-button .btn-renta-car{background-color:#ed5505;color:#fff;padding:.5rem}
-.contact input[type=text],.contact input[type=email],.contact textarea,.renta input[type=text],.renta input[type=email],.renta textarea{width:100%;height:32px}
+.contact input[type=text],.contact input[type=email],.contact input[type=number],.contact select,.contact textarea,.renta input[type=text],.renta input[type=email],.renta input[type=number],.renta select,.renta textarea{width:100%;height:32px}
 .contact textarea,.renta textarea{height:90px}
 .contact .wpcf7-submit,.renta .wpcf7-submit{background-color:#ed5505;color:#fff;padding:.5rem;border:none}
 .mfp-bg{top:0;left:0;width:100%;height:100%;z-index:1042;overflow:hidden;position:fixed;background:#0b0b0b;opacity:.8;filter:alpha(opacity=80)}

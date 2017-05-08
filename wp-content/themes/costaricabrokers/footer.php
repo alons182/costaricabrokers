@@ -88,5 +88,19 @@
 
 <?php wp_footer(); ?>
 
+<script>
+ 
+    var wpcf7ElmContact = document.querySelector( '.wpcf7' ); //form contact
+    
+
+      if(wpcf7ElmContact)
+    {
+          wpcf7ElmContact.addEventListener( 'wpcf7submit', function( event ) {
+            ga('send', 'event', 'Contact Form', 'submit');
+        }, false );
+      }
+   
+</script>
+
 </body>
 </html>

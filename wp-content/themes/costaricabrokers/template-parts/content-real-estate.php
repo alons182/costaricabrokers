@@ -67,7 +67,17 @@
 			</div>
 		<?php endif; ?>
 		<div class="columns columns-1">
-				<?php echo rwmb_meta( 'rw_video'); ?>
+					<?php 
+						
+						if(rwmb_meta( 'rw_video') != "Embed HTML not available."){
+							//$url = get_post_meta( get_the_ID(), 'rw_video', true );
+							//echo wp_oembed_get( $url, array('rel=0') ); 
+							echo rwmb_meta( 'rw_video');
+
+						}
+
+						?>
+				
 					
 		</div>
 	</div><!-- .entry-content -->

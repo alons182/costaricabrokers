@@ -17,6 +17,8 @@ get_header(); ?>
 			if ( get_post_type( $post ) == 'property' ) : 
 				 get_template_part( 'template-parts/content', 'property' ); 
 			
+			elseif( get_post_type( $post ) == 'real-estate'):
+				 get_template_part( 'template-parts/content', 'real-estate' ); 
 			else :
 			get_template_part( 'template-parts/content', get_post_format() );
 

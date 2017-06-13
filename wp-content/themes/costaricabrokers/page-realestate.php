@@ -30,10 +30,10 @@ get_header(); ?>
                                 'hide_empty' => false,
                                
                             ) );
-                      var_dump($categories);
+                      
                          foreach ($categories as $key => $category) {  ?>
 							
-							<div><?php $category->name ?></div>
+							<div><?php echo $category->name ?></div>
 							
                         <?php } ?> 
 

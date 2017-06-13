@@ -95,7 +95,7 @@ function costaricabrokers_register_meta_boxes( $meta_boxes )
                 
             ),
               array(
-                'name'  => 'Bed Distribution',
+                'name'  => 'Features 2',
                 'id'    => $prefix . 'features2',
                 'type'  => 'wysiwyg',
                 'std'   => '',

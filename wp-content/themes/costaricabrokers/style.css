@@ -261,7 +261,7 @@ p{margin-top:0}
 .footer__about{width:50%;float:left;font-size:.8rem;padding:0 15px 30px}
 .footer__contact,.footer__social{width:25%;float:left;padding:0 15px 30px}
 .footer__copyright{text-align:center;color:#727679}}
-.tabs{position:relative;min-height:250px;clear:both;margin:25px 0}
+.tabs{position:relative;min-height:350px;clear:both;margin:25px 0}
 .tabs ul{display:inline-block;vertical-align:top;width:100%}
 .tabs .content{position:static;top:28px;left:0;background:#fff;right:0;bottom:0;padding:20px;border:1px solid #ccc}
 .tabs [type=radio]:checked~label{background:#fff;border-bottom:1px solid #fff;z-index:2}
@@ -269,7 +269,7 @@ p{margin-top:0}
 .tab{float:left}
 .tab label{background:#eee;padding:10px;border:1px solid #ccc;margin-left:-1px;position:relative;left:1px;cursor:pointer}
 .tab [type=radio]{display:none}
-@media screen and (min-width:940px){.tabs ul{width:25%}
+@media screen and (min-width:940px){.tabs ul{width:29%}
 .tabs .content{position:absolute}}
 .type-property iframe{width:100%;height:300px;margin-bottom:1rem}
 @media screen and (min-width:768px){.type-property iframe{width:450px}}

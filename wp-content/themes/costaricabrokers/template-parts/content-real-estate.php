@@ -53,11 +53,13 @@
 				<?php echo rwmb_meta( 'rw_features'); ?>
 			</div>
 			</div>
-			<div class="tab"><input id="tab-bed" name="tab-group-1" type="radio" /><label for="tab-bed">Other Info</label>
-			<div class="content">
-				<?php echo rwmb_meta( 'rw_features2'); ?>
-			</div>
-			</div>
+			<?php if(rwmb_meta( 'rw_features2')) : ?>
+				<div class="tab"><input id="tab-bed" name="tab-group-1" type="radio" /><label for="tab-bed">Other Info</label>
+				<div class="content">
+					<?php echo rwmb_meta( 'rw_features2'); ?>
+				</div>
+				</div>
+			<?php endif; ?>
 		</div>
 		
 		<div class="columns columns-1">

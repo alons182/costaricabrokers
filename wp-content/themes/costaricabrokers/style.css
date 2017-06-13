@@ -86,6 +86,7 @@ p{margin-top:0}
 .inner{max-width:1170px;margin:0 auto;position:relative;padding-left:1rem;padding-right:1rem}
 @media screen and (min-width:768px){.video{width:450px}
 .columns-2{width:45%}}
+.single-real-estate .entry-title{margin-bottom:0}
 .header{position:relative;height:84px;left:0;top:0;right:0;z-index:100;-webkit-box-shadow:0 1px 0 rgba(0,0,0,.15);box-shadow:0 1px 0 rgba(0,0,0,.15);background-color:#fff}
 .header__logo{float:left;display:block;padding-top:10px;width:180px}
 .header__menu{display:none;position:absolute;top:81px;left:0;right:0;background-color:#fff}

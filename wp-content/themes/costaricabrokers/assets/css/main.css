@@ -672,6 +672,9 @@ p {
     width: 45%;
   }
 }
+.single-real-estate .entry-title {
+  margin-bottom: 0;
+}
 .header {
   position: relative;
   height: 84px;

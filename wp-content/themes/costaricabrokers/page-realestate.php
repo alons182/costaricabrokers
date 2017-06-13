@@ -25,17 +25,28 @@ get_header(); ?>
 
 			endwhile; // End of the loop.
 			?>
+			<div class="services-icons__container">
+
+
 			 <?php $categories = get_terms( array(
                                 'taxonomy' => 'type',
                                 'hide_empty' => false,
                                
                             ) );
-                      
+                      	
                          foreach ($categories as $key => $category) {  ?>
 							
-							<div><?php echo $category->name ?></div>
+						
+							<div>
+
+							<img class="alignnone size-medium wp-image-471" src="http://pictures.escapia.com/PEXSCR/7895770091.jpg" alt="" width="300" height="214" />
+							<h3 class="services-icons__item__title"><?php echo $category->name ?></h3>
+							<a class="services-icons__link" href="<?php the_permalink(); ?>"> </a>
+
+							</div>
 							
                         <?php } ?> 
+               </div>
 
 		</div><!-- #main -->
 	</div><!-- #primary -->

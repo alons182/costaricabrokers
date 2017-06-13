@@ -18,7 +18,7 @@ get_header(); ?>
 	
 	<div id="primary" class="content-area">
 		<div class="inner">
-
+      <h1><?php echo $category->name; ?></h1>
 			<div class="services-icons__container">
 
 				<?php

@@ -49,11 +49,13 @@
 			
 		?>
 		<div class="tabs">
-			<div class="tab"><input id="tab-features" checked="checked" name="tab-group-1" type="radio" /><label for="tab-features">Features</label>
-			<div class="content">
-				<?php echo rwmb_meta( 'rw_features'); ?>
-			</div>
-			</div>
+			<?php if(rwmb_meta( 'rw_features')) : ?>
+				<div class="tab"><input id="tab-features" checked="checked" name="tab-group-1" type="radio" /><label for="tab-features">Features</label>
+				<div class="content">
+					<?php echo rwmb_meta( 'rw_features'); ?>
+				</div>
+				</div>
+			<?php endif; ?>
 			<?php if(rwmb_meta( 'rw_features2')) : ?>
 				<div class="tab"><input id="tab-bed" name="tab-group-1" type="radio" /><label for="tab-bed">Other Info</label>
 				<div class="content">

@@ -72,7 +72,7 @@ function costaricabrokers_register_meta_boxes( $meta_boxes )
 
         'fields' => array(
             
-    
+            
              array(
                 'name'  => 'Photos',
                 'desc'  => 'Format: Image File',
@@ -80,6 +80,17 @@ function costaricabrokers_register_meta_boxes( $meta_boxes )
                 'type'  => 'image_advanced',
                 'std'   => '',
                 'class' => 'custom-class'
+                
+            ),
+
+            array(
+                'name'  => 'Location',
+                'id'    => $prefix . 'location',
+                'type'  => 'text',
+                'std'   => '',
+                'class' => 'location'
+               
+                
                 
             ),
             

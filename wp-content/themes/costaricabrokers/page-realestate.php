@@ -41,7 +41,7 @@ get_header(); ?>
 
 							<img class="alignnone size-medium wp-image-471" src="http://pictures.escapia.com/PEXSCR/7895770091.jpg" alt="" width="300" height="214" />
 							<h3 class="services-icons__item__title"><?php echo $category->name ?></h3>
-							<a class="services-icons__link" href="<?php the_permalink(); ?>"> </a>
+							<a class="services-icons__link" href="/type/<?php echo $category->slug ?>"> </a>
 
 							</div>
 							

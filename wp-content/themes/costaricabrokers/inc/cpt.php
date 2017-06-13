@@ -11,7 +11,7 @@ function costaricabrokers_register_meta_boxes( $meta_boxes )
     $meta_boxes[] = array(
         'id'       => 'additional_information',
         'title'    => 'Información Adicional',
-        'pages'    => array('property', 'projects' ),
+        'pages'    => array('property', 'projects','real-estate' ),
         'context'  => 'normal',
         'priority' => 'high',
 

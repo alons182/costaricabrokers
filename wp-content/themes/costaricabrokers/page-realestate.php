@@ -39,7 +39,7 @@ get_header(); ?>
 						
 							<div>
 
-							<img class="alignnone size-medium wp-image-471" src="<?php echo get_template_directory_uri();?>/img/real-estate/<?php echo $category->slug ?>" alt="" width="300" height="214" />
+							<img class="alignnone size-medium wp-image-471" src="<?php echo get_template_directory_uri();?>/img/real-estate/<?php echo $category->slug ?>.jpg" alt="" width="300" height="214" />
 							<h3 class="services-icons__item__title"><?php echo $category->name ?></h3>
 							<a class="services-icons__link" href="/type/<?php echo $category->slug ?>"> </a>
 

@@ -1754,6 +1754,7 @@ p {
 .tabs ul {
   display: inline-block;
   vertical-align: top;
+  width: 100%;
 }
 .tabs .content {
   position: static;
@@ -1789,6 +1790,9 @@ p {
   display: none;
 }
 @media screen and (min-width: 940px) {
+  .tabs ul {
+    width: 25%;
+  }
   .tabs .content {
     position: absolute;
   }

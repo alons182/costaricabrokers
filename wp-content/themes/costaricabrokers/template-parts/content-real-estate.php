@@ -89,7 +89,7 @@
 <section class="services-icons white">
 
         <div class="inner">
-			<h2 class="txt-center">Others Properties</h2>        
+			<h2 class="txt-center">Others</h2>        
 
             <div class="services-icons__container">
                 <?php 
@@ -103,7 +103,7 @@
                           } 
             
                           $args = array(
-                            'post_type' => 'property',
+                            'post_type' => 'real-estate',
                             'paged' => $paged,
                             'posts_per_page' => 3,
                             'orderby' => 'rand'

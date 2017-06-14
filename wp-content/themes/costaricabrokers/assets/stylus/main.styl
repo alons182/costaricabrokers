@@ -875,5 +875,21 @@ p
 		color white
 		padding .5rem
 		border none
+
+.blog
+	&-inner 
+		display flex 
+		flex-wrap wrap
+		justify-content space-between
+	&-content
+	&-sidebar
+		width 100%
+
+@media screen and (min-width: 960px)
+	.blog
+		&-content
+			width 60%
+		&-sidebar
+			width 30%
 	
 		

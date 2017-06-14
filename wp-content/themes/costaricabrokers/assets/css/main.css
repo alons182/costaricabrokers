@@ -1869,3 +1869,35 @@ p {
   padding: 0.5rem;
   border: none;
 }
+.blog-inner {
+  display: -webkit-box;
+  display: -moz-box;
+  display: -webkit-flex;
+  display: -ms-flexbox;
+  display: box;
+  display: flex;
+  -webkit-box-lines: multiple;
+  -moz-box-lines: multiple;
+  -o-box-lines: multiple;
+  -webkit-flex-wrap: wrap;
+  -ms-flex-wrap: wrap;
+  flex-wrap: wrap;
+  -webkit-box-pack: justify;
+  -moz-box-pack: justify;
+  -o-box-pack: justify;
+  -ms-flex-pack: justify;
+  -webkit-justify-content: space-between;
+  justify-content: space-between;
+}
+.blog-content,
+.blog-sidebar {
+  width: 100%;
+}
+@media screen and (min-width: 960px) {
+  .blog-content {
+    width: 60%;
+  }
+  .blog-sidebar {
+    width: 30%;
+  }
+}

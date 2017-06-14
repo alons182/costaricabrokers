@@ -20,8 +20,9 @@ get_header(); ?>
 			elseif( get_post_type( $post ) == 'real-estate'):
 				 get_template_part( 'template-parts/content', 'real-estate' ); 
 			else :
-			get_template_part( 'template-parts/content', get_post_format() );
-
+				get_template_part( 'template-parts/content', get_post_format() );
+				get_sidebar();
+				
 			the_post_navigation();
 
 			// If comments are open or we have at least one comment, load up the comment template.

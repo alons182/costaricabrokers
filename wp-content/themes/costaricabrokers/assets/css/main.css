@@ -1908,6 +1908,12 @@ p {
 .blog-inner textarea {
   height: 90px;
 }
+.blog-inner .submit {
+  background-color: #ed5505;
+  color: #fff;
+  padding: 0.5rem;
+  border: none;
+}
 .blog-content,
 .blog-sidebar {
   width: 100%;

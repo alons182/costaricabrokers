@@ -292,6 +292,7 @@ p{margin-top:0}
 .blog-content,.blog-sidebar{width:100%}
 @media screen and (min-width:960px){.blog-content{width:60%}
 .blog-sidebar{width:30%;padding:2rem;border-left:1px solid #c3c3c3}
+.blog-sidebar .widget_search{margin-bottom:2rem}
 .blog-sidebar .widget_search .screen-reader-text,.blog-sidebar .widget_search .search-submit{display:none}}
 .mfp-bg{top:0;left:0;width:100%;height:100%;z-index:1042;overflow:hidden;position:fixed;background:#0b0b0b;opacity:.8;filter:alpha(opacity=80)}
 .mfp-wrap{top:0;left:0;width:100%;height:100%;z-index:1043;position:fixed;outline:0!important;-webkit-backface-visibility:hidden}

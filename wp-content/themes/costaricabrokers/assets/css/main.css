@@ -1927,6 +1927,9 @@ p {
     padding: 2rem;
     border-left: 1px solid #c3c3c3;
   }
+  .blog-sidebar .widget_search {
+    margin-bottom: 2rem;
+  }
   .blog-sidebar .widget_search .screen-reader-text,
   .blog-sidebar .widget_search .search-submit {
     display: none;

@@ -1107,140 +1107,79 @@ p {
 .home .main {
   padding-top: 0;
 }
-.home .search {
-  padding: 2rem 0 1rem;
-}
-.search {
-  padding: 6.5rem 0 1rem;
-  color: #fff;
-  text-align: center;
-}
-.search h1 {
-  text-transform: uppercase;
-}
-.search__form__row {
-  margin-bottom: 2rem;
-  padding-bottom: 2rem;
-  border-bottom: 1px solid rgba(0,0,0,0.15);
-  -webkit-box-shadow: 0 1px 0 rgba(255,255,255,0.3);
-  box-shadow: 0 1px 0 rgba(255,255,255,0.3);
-}
-.search__form__row:last-of-type {
-  border: none;
-  padding-bottom: 0;
-  margin-bottom: 0;
-  -webkit-box-shadow: 0 0 0;
-  box-shadow: 0 0 0;
-}
-.search__form__row .form-group {
-  display: inline-block;
-  width: 100%;
-  padding-bottom: 1.3rem;
-/*&.spinner
+/*.search
+	padding 6.5rem 0 1rem
+	color white
+	text-align center
+	h1 
+		text-transform uppercase
+	&__form
+		&__row
+			margin-bottom 2rem
+			padding-bottom 2rem
+			border-bottom 1px solid rgba(0,0,0,.15)
+			box-shadow 0 1px 0 rgba(255,255,255,.3)
+			&:last-of-type
+				border none
+				padding-bottom 0
+				margin-bottom 0
+				box-shadow 0 0 0
+				
+			.form-group
+				display inline-block
+				width 100%
+				padding-bottom 1.3rem
+				
+				input[type="text"]
+					border: 1px solid #DFDFD0;
+					line-height: 45px;
+					height: 45px;
+					position: relative;
+					overflow: hidden;
+					width: 100% !important;
+					padding-left: 15px;
+					background: #fff;
+					border-radius: 3px;
+				select
+					width 100%
+					height 45px
+				label
+					float left 
+					display block 
+					font-weight bold 
+					text-transform uppercase
+					padding-bottom 1rem
+					color white
+				button
+					border none
+					text-transform uppercase
+					border-radius 3px
+					color #fff 
+					display inline-block
+					text-align center
+					max-width 100%
+					padding 1rem
+					width 100%
+					transition all .5s ease
+					&:hover
+						background-color white
+						color oscuro
+				/*&.spinner
 					label
 						padding-right 1rem
 					input
 						width 6% !important	*/
-}
-.search__form__row .form-group input[type="text"] {
-  border: 1px solid #dfdfd0;
-  line-height: 45px;
-  height: 45px;
-  position: relative;
-  overflow: hidden;
-  width: 100% !important;
-  padding-left: 15px;
-  background: #fff;
-  border-radius: 3px;
-}
-.search__form__row .form-group select {
-  width: 100%;
-  height: 45px;
-}
-.search__form__row .form-group label {
-  float: left;
-  display: block;
-  font-weight: bold;
-  text-transform: uppercase;
-  padding-bottom: 1rem;
-  color: #fff;
-}
-.search__form__row .form-group button {
-  border: none;
-  text-transform: uppercase;
-  border-radius: 3px;
-  color: #fff;
-  display: inline-block;
-  text-align: center;
-  max-width: 100%;
-  padding: 1rem;
-  width: 100%;
-  -webkit-transition: all 0.5s ease;
-  -moz-transition: all 0.5s ease;
-  -o-transition: all 0.5s ease;
-  -ms-transition: all 0.5s ease;
-  transition: all 0.5s ease;
-}
-.search__form__row .form-group button:hover {
-  background-color: #fff;
-  color: #191f26;
-}
-.search__form__row .form-group.radios > div {
-  float: left;
-}
-.search__form__row .form-group.radios > div:last-of-type {
-  float: left;
-  padding-left: 30px;
-}
-.search__form__row .form-group.radios .radio {
-  position: relative;
-  top: 0;
-  margin-right: 15px;
-  float: left;
-}
-@media screen and (min-width: 980px) {
-  .search__form__row {
-    display: -webkit-box;
-    display: -moz-box;
-    display: -webkit-flex;
-    display: -ms-flexbox;
-    display: box;
-    display: flex;
-    -webkit-box-pack: justify;
-    -moz-box-pack: justify;
-    -o-box-pack: justify;
-    -ms-flex-pack: justify;
-    -webkit-justify-content: space-between;
-    justify-content: space-between;
-    -webkit-box-lines: multiple;
-    -moz-box-lines: multiple;
-    -o-box-lines: multiple;
-    -webkit-flex-wrap: wrap;
-    -ms-flex-wrap: wrap;
-    flex-wrap: wrap;
-  }
-  .search__form__row .form-group {
-    width: 30%;
-  }
-  .search__form__row .form-group.spinner {
-    width: 45%;
-  }
-  .search__form__row .form-group.spinner label {
-    padding-right: 1rem;
-  }
-  .search__form__row .form-group.spinner input {
-    width: 20% !important;
-  }
-  .search__form__row .form-group.radios {
-    width: 25%;
-  }
-  .search__form__row .form-group.radios .radio {
-    margin-right: 10px;
-  }
-  .search__form__row .form-group.btns {
-    width: 20%;
-  }
-}
+/*&.radios
+					> div
+						float left
+						&:last-of-type
+							float left
+							padding-left 30px
+					.radio
+						position relative
+						top 0
+						margin-right 15px
+						float left*/
 .services-icons {
   padding-top: 4rem;
   padding-bottom: 3rem;

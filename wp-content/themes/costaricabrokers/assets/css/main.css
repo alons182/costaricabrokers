@@ -1107,11 +1107,9 @@ p {
 .home .main {
   padding-top: 0;
 }
-/*.search
-	padding 6.5rem 0 1rem
-	color white
-	text-align center
-	h1 
+.search {
+  text-align: center;
+/*h1 
 		text-transform uppercase
 	&__form
 		&__row
@@ -1180,6 +1178,31 @@ p {
 						top 0
 						margin-right 15px
 						float left*/
+}
+/*.search
+		&__form
+			&__row
+				display flex
+				justify-content space-between
+				flex-wrap wrap
+				
+					
+				.form-group
+					width 30%
+					
+					&.spinner
+						width 45%
+						label
+							padding-right 1rem
+						input
+							width 20% !important
+					&.radios 
+						width 25%
+						.radio
+							margin-right 10px
+						
+					&.btns
+						width 20%	*/
 .services-icons {
   padding-top: 4rem;
   padding-bottom: 3rem;

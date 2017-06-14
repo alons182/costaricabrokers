@@ -150,6 +150,7 @@ p{margin-top:0}
 @media screen and (min-width:480px){.intro__info h1{font-size:3.5rem}
 .intro__info h2{font-size:1.5rem}}
 .home .main{padding-top:0}
+.search{text-align:center}
 .services-icons{padding-top:4rem;padding-bottom:3rem}
 .services-icons__container>div{position:relative}
 .services-icons__item{width:100%;padding:0 0 2rem;display:inline-block;position:relative}

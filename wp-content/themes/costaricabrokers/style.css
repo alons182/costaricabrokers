@@ -284,9 +284,12 @@ p{margin-top:0}
 .contact textarea,.renta textarea{height:90px}
 .contact .wpcf7-submit,.renta .wpcf7-submit{background-color:#ed5505;color:#fff;padding:.5rem;border:none}
 .blog-inner{display:-webkit-box;display:-moz-box;display:-webkit-flex;display:-ms-flexbox;display:box;display:flex;-webkit-box-lines:multiple;-moz-box-lines:multiple;-o-box-lines:multiple;-webkit-flex-wrap:wrap;-ms-flex-wrap:wrap;flex-wrap:wrap;-webkit-box-pack:justify;-moz-box-pack:justify;-o-box-pack:justify;-ms-flex-pack:justify;-webkit-justify-content:space-between;justify-content:space-between}
+.blog-inner a{color:#5ac6a8}
+.blog-inner ul{margin-left:35px;margin-bottom:1rem}
 .blog-content,.blog-sidebar{width:100%}
 @media screen and (min-width:960px){.blog-content{width:60%}
-.blog-sidebar{width:30%}}
+.blog-sidebar{width:30%;padding:2rem;border-left:1px solid #c3c3c3}
+.blog-sidebar .widget_search .screen-reader-text,.blog-sidebar .widget_search .search-submit{display:none}}
 .mfp-bg{top:0;left:0;width:100%;height:100%;z-index:1042;overflow:hidden;position:fixed;background:#0b0b0b;opacity:.8;filter:alpha(opacity=80)}
 .mfp-wrap{top:0;left:0;width:100%;height:100%;z-index:1043;position:fixed;outline:0!important;-webkit-backface-visibility:hidden}
 .mfp-container{text-align:center;position:absolute;width:100%;height:100%;left:0;top:0;padding:0 8px;-webkit-box-sizing:border-box;-moz-box-sizing:border-box;box-sizing:border-box}

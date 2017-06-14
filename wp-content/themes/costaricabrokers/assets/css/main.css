@@ -1889,6 +1889,13 @@ p {
   -webkit-justify-content: space-between;
   justify-content: space-between;
 }
+.blog-inner a {
+  color: #5ac6a8;
+}
+.blog-inner ul {
+  margin-left: 35px;
+  margin-bottom: 1rem;
+}
 .blog-content,
 .blog-sidebar {
   width: 100%;
@@ -1899,5 +1906,11 @@ p {
   }
   .blog-sidebar {
     width: 30%;
+    padding: 2rem;
+    border-left: 1px solid #c3c3c3;
+  }
+  .blog-sidebar .widget_search .screen-reader-text,
+  .blog-sidebar .widget_search .search-submit {
+    display: none;
   }
 }

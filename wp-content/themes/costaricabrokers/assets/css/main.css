@@ -1179,15 +1179,15 @@ p {
 						margin-right 15px
 						float left*/
 }
-.search a {
-  color: #5ac6a8;
-}
-.search ul {
-  margin-left: 35px;
-  margin-bottom: 1rem;
-}
 .search .content-area {
   padding: 5rem 1rem;
+}
+.search .content-area a {
+  color: #5ac6a8;
+}
+.search .content-area ul {
+  margin-left: 35px;
+  margin-bottom: 1rem;
 }
 .search .search-submit {
   background-color: #ed5505;

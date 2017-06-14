@@ -1896,6 +1896,18 @@ p {
   margin-left: 35px;
   margin-bottom: 1rem;
 }
+.blog-inner input[type="text"],
+.blog-inner input[type="email"],
+.blog-inner input[type="number"],
+.blog-inner input[type="search"],
+.blog-inner select,
+.blog-inner textarea {
+  width: 100%;
+  height: 32px;
+}
+.blog-inner textarea {
+  height: 90px;
+}
 .blog-content,
 .blog-sidebar {
   width: 100%;

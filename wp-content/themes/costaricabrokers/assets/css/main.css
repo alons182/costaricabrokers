@@ -1832,6 +1832,7 @@ p {
 .blog-sidebar .post {
   border-bottom: 1px solid #ddd;
   padding-bottom: 1rem;
+  margin-bottom: 1rem;
 }
 .blog-banner {
   -webkit-background-size: cover;

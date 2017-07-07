@@ -1799,6 +1799,9 @@ p {
 .blog-inner a {
   color: #5ac6a8;
 }
+.blog-inner a:hover {
+  text-decoration: underline;
+}
 .blog-inner ul {
   margin-left: 35px;
   margin-bottom: 1rem;
@@ -1824,6 +1827,22 @@ p {
 .blog-content,
 .blog-sidebar {
   width: 100%;
+}
+.blog-banner {
+  -webkit-background-size: cover;
+  -moz-background-size: cover;
+  background-size: cover;
+  background-position: center center;
+  background-repeat: no-repeat;
+  height: 30vh;
+  position: relative;
+}
+.blog-banner a {
+  position: absolute;
+  left: 0;
+  right: 0;
+  top: 0;
+  bottom: 0;
 }
 @media screen and (min-width: 960px) {
   .blog-content {

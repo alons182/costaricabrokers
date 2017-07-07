@@ -894,8 +894,10 @@ p
 		display flex 
 		flex-wrap wrap
 		justify-content space-between
-		a 
+		a
 			color #5ac6a8
+			&:hover
+				text-decoration underline
 		ul 
 			margin-left: 35px;
 			margin-bottom 1rem
@@ -918,6 +920,19 @@ p
 	&-content
 	&-sidebar
 		width 100%
+	
+	&-banner
+		background-size cover 
+		background-position center center
+		background-repeat no-repeat
+		height 30vh
+		position relative
+		a 
+			position absolute
+			left 0
+			right 0
+			top 0
+			bottom 0
 
 @media screen and (min-width: 960px)
 	.blog

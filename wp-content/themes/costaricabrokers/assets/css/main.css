@@ -1828,6 +1828,11 @@ p {
 .blog-sidebar {
   width: 100%;
 }
+.blog-content .post,
+.blog-sidebar .post {
+  border-bottom: 1px solid #ddd;
+  padding-bottom: 1rem;
+}
 .blog-banner {
   -webkit-background-size: cover;
   -moz-background-size: cover;

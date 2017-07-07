@@ -273,6 +273,7 @@ p{margin-top:0}
 .blog-inner textarea{height:90px}
 .blog-inner .submit{background-color:#ed5505;color:#fff;padding:.5rem;border:none}
 .blog-content,.blog-sidebar{width:100%}
+.blog-content .post,.blog-sidebar .post{border-bottom:1px solid #ddd;padding-bottom:1rem}
 .blog-banner{-webkit-background-size:cover;-moz-background-size:cover;background-size:cover;background-position:center center;background-repeat:no-repeat;height:30vh;position:relative}
 .blog-banner a{position:absolute;left:0;right:0;top:0;bottom:0}
 @media screen and (min-width:960px){.blog-content{width:60%}

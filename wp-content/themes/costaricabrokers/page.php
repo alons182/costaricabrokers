@@ -32,6 +32,46 @@ get_header(); ?>
 
 		</div><!-- #main -->
 	</div><!-- #primary -->
+	<h3 class="services-title">Specialty Concierge</h3>
+    <section class="services-box" id="services">
+
+              <?php rewind_posts(); 
+                $args = array(
+                  'post_type' => 'page',
+                  'post__in' => array(134,138,141,144,733),
+                  'order' => 'asc'
+                  );
+                query_posts($args);
+                ?>
+                <?php if ( have_posts() ) : while ( have_posts() ) : the_post(); ?>
+
+                        <article class="services-box__item">
+                            <figure class="services-box__item__img">
+                                <?php if ( has_post_thumbnail() ) :
+
+                                    $id = get_post_thumbnail_id($post->ID);
+                                    $thumb_url = wp_get_attachment_image_src($id,'full', true);
+                                    ?>
+                                    
+                                     <img src="<?php echo $thumb_url[0] ?>" alt="img">           
+                                <?php endif; ?>
+                                <div class="overlay">
+                                    <a href="<?php the_permalink(); ?>" class="services-box__item__link">+</a>
+                                </div>
+                            </figure>
+                            <div class="services-box__item__info">
+                                <h4><?php the_title(); ?></h4>
+                                <?php the_excerpt(); ?>
+                                </p>
+                                <a href="<?php the_permalink(); ?>" class="services-box__item__more">Read More</a>
+                            </div>
+                        </article>
+        
+                    <?php endwhile; ?>
+                    <!-- post navigation -->
+                  
+                <?php endif; ?>
+    </section>
 
 <?php
 /*get_sidebar();*/

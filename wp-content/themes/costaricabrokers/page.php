@@ -29,7 +29,7 @@ get_header(); ?>
 
 			endwhile; // End of the loop.
 			?>
-			<h3 class="services-title">Specialty Concierge</h3>
+			<?php if($post->ID == 22) : ?>
 		    <section class="services-box" id="services">
 
 		              <?php //rewind_posts(); 
@@ -78,6 +78,7 @@ get_header(); ?>
 		                	 wp_reset_postdata();
 		                ?>
 		    </section>
+		<?php endif; ?>
 		</div><!-- #main -->
 	</div><!-- #primary -->
 

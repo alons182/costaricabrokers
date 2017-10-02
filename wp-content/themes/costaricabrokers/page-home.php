@@ -101,7 +101,7 @@ get_header(); ?>
               <?php rewind_posts(); 
                 $args = array(
                   'post_type' => 'page',
-                  'post__in' => array(134,138,141,144),
+                  'post__in' => array(134,138,141,144,733),
                   'order' => 'asc'
                   );
                 query_posts($args);

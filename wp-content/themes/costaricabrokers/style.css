@@ -187,9 +187,9 @@ p{margin-top:0}
 .services-box__item__more{color:#044902;font-weight:700;display:block}
 .services-box__item__more:hover{text-decoration:underline}
 @media screen and (min-width:800px){.services-box{overflow:hidden}
-.services-box__item{display:inline-block;width:50%;float:left}
+.services-box__item{display:inline-block;width:40%;float:left}
 .services-box__item__info{border-right:1px solid #dfdfd0}}
-@media screen and (min-width:1024px){.services-box__item{width:25%}}
+@media screen and (min-width:1024px){.services-box__item{width:20%}}
 .testimonials{color:#fff;text-align:center;padding-top:2rem;padding-bottom:2rem;width:100%;overflow:hidden}
 .testimonials__slide{padding:0 1rem;width:100%}
 .testimonials__title{font-size:2rem;line-height:50px;text-transform:uppercase;margin-top:0;margin-bottom:1.5rem}

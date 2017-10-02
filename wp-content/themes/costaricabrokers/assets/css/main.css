@@ -1369,7 +1369,7 @@ p {
   }
   .services-box__item {
     display: inline-block;
-    width: 50%;
+    width: 40%;
     float: left;
   }
   .services-box__item__info {
@@ -1378,7 +1378,7 @@ p {
 }
 @media screen and (min-width: 1024px) {
   .services-box__item {
-    width: 25%;
+    width: 20%;
   }
 }
 .testimonials {

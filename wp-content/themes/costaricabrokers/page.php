@@ -32,15 +32,22 @@ get_header(); ?>
 			<h3 class="services-title">Specialty Concierge</h3>
 		    <section class="services-box" id="services">
 
-		              <?php rewind_posts(); 
+		              <?php //rewind_posts(); 
+
+               
+                  
 		                $args = array(
 		                  'post_type' => 'page',
 		                  'post__in' => array(134,138,141,144,733),
 		                  'order' => 'asc'
 		                  );
-		                query_posts($args);
+		                 $items = new WP_Query( $args );
+		                 // Pagination fix
+		                  $temp_query = $wp_query;
+		                  $wp_query   = NULL;
+		                  $wp_query   = $items;
 		                ?>
-		                <?php if ( have_posts() ) : while ( have_posts() ) : the_post(); ?>
+		                <?php if ( $items->have_posts() ) : while ( $items->have_posts() ) : $items->the_post(); ?>
 
 		                        <article class="services-box__item">
 		                            <figure class="services-box__item__img">
@@ -67,11 +74,13 @@ get_header(); ?>
 		                    <?php endwhile; ?>
 		                    <!-- post navigation -->
 		                  
-		                <?php endif; ?>
+		                <?php endif; 
+		                	 wp_reset_postdata();
+		                ?>
 		    </section>
 		</div><!-- #main -->
 	</div><!-- #primary -->
-	
+
 
 <?php
 /*get_sidebar();*/

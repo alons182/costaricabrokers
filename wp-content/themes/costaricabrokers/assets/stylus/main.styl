@@ -1,7 +1,7 @@
 @import "nib"
 @import "normalize.styl"
 @import "icons.styl"
-
+@import "tables.styl"
 
 celeste = #1FAEC0
 oscuro = #191F26
@@ -87,7 +87,9 @@ p
 	.columns-2
 		width 45%		
 		
-
+.single-real-estate
+	.entry-title
+		margin-bottom 0
 .header
 	position relative //fixed
 	height 84px 
@@ -159,7 +161,7 @@ p
 				border 0
 				padding 0 .4rem
 				color #727679
-				font-size 14px
+				font-size 13px//14px
 				&:hover 
 					color oscuro
 			.sub-menu
@@ -264,13 +266,26 @@ p
 .home
 	.main 
 		padding-top 0//3rem
-	.search
-		padding 2rem 0 1rem			 
+	/*.search
+		padding 2rem 0 1rem*/	 
 .search
-	padding 6.5rem 0 1rem
-	color white
-	text-align center
-	h1 
+	//padding 6.5rem 0 1rem
+	//color white	
+	.content-area
+		padding 5rem 1rem
+		text-align center
+		a 
+			color #5ac6a8
+		ul 
+			margin-left: 35px;
+			margin-bottom 1rem
+			
+	.search-submit
+		background-color #ED5505
+		color white
+		padding .5rem
+		border none
+	/*h1 
 		text-transform uppercase
 	&__form
 		&__row
@@ -328,7 +343,7 @@ p
 						padding-right 1rem
 					input
 						width 6% !important	*/		
-				&.radios
+				/*&.radios
 					> div
 						float left
 						&:last-of-type
@@ -338,9 +353,9 @@ p
 						position relative
 						top 0
 						margin-right 15px
-						float left
-@media screen and (min-width: 980px)
-	.search
+						float left*/
+//@media screen and (min-width: 980px)
+	/*.search
 		&__form
 			&__row
 				display flex
@@ -363,7 +378,7 @@ p
 							margin-right 10px
 						
 					&.btns
-						width 20%	
+						width 20%	*/
 
 .services-icons
 	padding-top 4rem
@@ -767,13 +782,14 @@ p
 				
 .tabs
 	position: relative;   
-	min-height: 250px; /* This part sucks */
+	min-height: 350px; /* This part sucks */
 	clear: both;
 	margin: 25px 0;
 	
 	ul 
 		display inline-block
 		vertical-align top
+		width 100%
 	.content
 		position: static;
 		top: 28px;
@@ -811,6 +827,8 @@ p
 
 @media screen and (min-width: 940px)		
 	.tabs
+		ul 
+			width 29%
 		.content
 			position: absolute;
 							
@@ -870,5 +888,71 @@ p
 		color white
 		padding .5rem
 		border none
+
+.blog
+	&-inner 
+		display flex 
+		flex-wrap wrap
+		justify-content space-between
+		a
+			color #5ac6a8
+			&:hover
+				text-decoration underline
+		ul 
+			margin-left: 35px;
+			margin-bottom 1rem
+			
+		input[type="text"]
+		input[type="email"]
+		input[type="number"]
+		input[type="search"]
+		select
+		textarea
+			width 100%
+			height 32px
+		textarea
+			height 90px
+		.submit
+			background-color #ED5505
+			color white
+			padding .5rem
+			border none
+	&-content
+	&-sidebar
+		width 100%
+		
+		.post 
+			border-bottom 1px solid #ddd
+			padding-bottom 1rem
+			margin-bottom 1rem
+	
+	&-banner
+		background-size cover 
+		background-position center center
+		background-repeat no-repeat
+		height 30vh
+		position relative
+		a 
+			position absolute
+			left 0
+			right 0
+			top 0
+			bottom 0
+
+@media screen and (min-width: 960px)
+	.blog
+		&-content
+			width 60%
+			
+		&-sidebar
+			width 30%
+			padding 2rem
+			border-left 1px solid #c3c3c3
+			.widget_search
+				margin-bottom 2rem
+				.screen-reader-text
+				.search-submit
+					display none
+			
 	
 		

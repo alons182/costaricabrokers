@@ -11,7 +11,7 @@ function costaricabrokers_register_meta_boxes( $meta_boxes )
     $meta_boxes[] = array(
         'id'       => 'additional_information',
         'title'    => 'Información Adicional',
-        'pages'    => array('property', 'projects' ),
+        'pages'    => array('property', 'projects','real-estate' ),
         'context'  => 'normal',
         'priority' => 'high',
 
@@ -45,6 +45,72 @@ function costaricabrokers_register_meta_boxes( $meta_boxes )
                 'type'  => 'wysiwyg',
                 'std'   => '',
                 'class' => 'beddistribution',
+                'rows' => 6
+                
+                
+            ),
+            // OEMBED
+            array(
+              'name' => 'video',
+              'id'   =>  $prefix. "video",
+              'type' => 'oembed',
+            ),
+            
+          
+             
+
+        )
+    );
+
+     // 2st meta box
+    $meta_boxes[] = array(
+        'id'       => 'additional_information',
+        'title'    => 'Información Adicional',
+        'pages'    => array('real-estate' ),
+        'context'  => 'normal',
+        'priority' => 'high',
+
+        'fields' => array(
+            
+            
+             array(
+                'name'  => 'Photos',
+                'desc'  => 'Format: Image File',
+                'id'    => $prefix . 'property_thumb',
+                'type'  => 'image_advanced',
+                'std'   => '',
+                'class' => 'custom-class'
+                
+            ),
+
+            array(
+                'name'  => 'Location',
+                'id'    => $prefix . 'location',
+                'type'  => 'text',
+                'std'   => '',
+                'class' => 'location'
+               
+                
+                
+            ),
+            
+            
+             array(
+                'name'  => 'Features',
+                'id'    => $prefix . 'features',
+                'type'  => 'wysiwyg',
+                'std'   => '',
+                'class' => 'features',
+                'rows' => 6
+                
+                
+            ),
+              array(
+                'name'  => 'Features 2',
+                'id'    => $prefix . 'features2',
+                'type'  => 'wysiwyg',
+                'std'   => '',
+                'class' => 'features2',
                 'rows' => 6
                 
                 

@@ -57,8 +57,8 @@ get_header(); ?>
                                         <h3 class="services-icons__item__title"><?php the_title(); ?></h3>
                                         <p class="services-icons__item__intro"><?php the_excerpt(); ?></p>
                                         
-                                       <?php if($post->post_title == "Hacienda Montezuma") : ?>
-                                        <a href="http://bookings.costarica-brokers.com/Unit/Details/122935" class="services-icons__link"></a>
+                                       <?php if($post->post_title == "Hermosa Heights 13") : ?>
+                                        <a href="http://bookings.costarica-brokers.com/Unit/Details/137362" class="services-icons__link"></a>
                                         <?php elseif($post->post_title == "Azul Paraiso 3-B") : ?>
                                           <a href="http://bookings.costarica-brokers.com/Unit/Details/124154" class="services-icons__link"></a>
                                        <?php elseif($post->post_title == "Azul Paraiso 9-A") : ?>

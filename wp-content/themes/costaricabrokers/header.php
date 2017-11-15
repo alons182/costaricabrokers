@@ -43,7 +43,7 @@
              <?php if ( is_front_page() ) : ?>
 	            <section class="intro">
                     <div class="banner">
-                        <div class="cycle-slideshow" data-cycle-slides=".banner-slide" data-cycle-pager=".banner-pager" data-cycle-timeout="10000"  data-cycle-pager-template="<a href=#></a>">
+                        <div class="cycle-slideshow" data-cycle-slides=".banner-slide" data-cycle-pager=".banner-pager" data-cycle-timeout="2000"  data-cycle-pager-template="<a href=#></a>">
                             <div class="banner-slide" style="background-image: url('<?php echo get_template_directory_uri();  ?>/img/banner1.jpg');">
                             </div>
                             <div class="banner-slide" style="background-image: url('<?php echo get_template_directory_uri();  ?>/img/banner2.jpg');">

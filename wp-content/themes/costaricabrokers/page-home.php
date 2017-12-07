@@ -95,7 +95,7 @@ get_header(); ?>
             <a href="#contact" class="call__btn wow fadeInRight color">Contact Us</a>
         </div>
     </section>
-    <h3 class="services-title">Specialty Concierge</h3>
+    <h3 class="services-title">Activities</h3>
     <section class="services-box" id="services">
 
               <?php rewind_posts(); 

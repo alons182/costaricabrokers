@@ -89,7 +89,7 @@
                     <div class="banner">
 
                         <div class="cycle-slideshow" data-cycle-slides=".banner-slide" data-cycle-pager=".banner-pager" data-cycle-timeout="2000"  data-cycle-pager-template="<a href=#></a>">
-                             <div class="banner-slide" style="background-image: url('<?php echo get_template_directory_uri(); ?>/img/brokers1.jpg');">
+                        	 <div class="banner-slide" style="background-image: url('<?php echo get_template_directory_uri(); ?>/img/brokers1.jpg');">
 
                             </div>
 
@@ -100,7 +100,6 @@
                             <div class="banner-slide" style="background-image: url('<?php echo get_template_directory_uri(); ?>/img/brokers3.jpg');">  
 
                             </div>
-
                             <div class="banner-slide" style="background-image: url('<?php echo get_template_directory_uri();  ?>/img/banner1.jpg');">
 
                             </div>

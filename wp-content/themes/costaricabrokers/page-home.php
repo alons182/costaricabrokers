@@ -6,8 +6,7 @@
 get_header(); ?>
     <section class="search color" id="properties">
         <div class="inner">
-
-             <h1>Get inspired</h1>
+             <h1 class="title-slider">Get inspired</h1>
         </div>
     </section>
 	<section class="services-icons white">
@@ -48,8 +47,10 @@ get_header(); ?>
                                             <?php if ( has_post_thumbnail() ) :
 
                                             $id = get_post_thumbnail_id($post->ID);
-                                            $thumb_url = wp_get_attachment_image_src($id,'thumbnail', true);
-                                            ?>
+											//Original
+                                            //$thumb_url = wp_get_attachment_image_src($id,'thumbnail', true);
+                                            $thumb_url = wp_get_attachment_image_src($id,array('100','100'), true);
+											?>
                                             
                                              <img src="<?php echo $thumb_url[0] ?>" alt="img">           
                                         <?php endif; ?>
@@ -160,7 +161,7 @@ get_header(); ?>
              <a href="http://caturgua.com/" class="partners__link" target="_blank"><img src="<?php echo get_template_directory_uri();?>/img/partners/Guanacaste.png" alt="Guanacaste Caturga"></a>
              <a href="http://caturgua.com/" class="partners__link" target="_blank"><img src="<?php echo get_template_directory_uri();?>/img/partners/caturga.png" alt="Guanacaste Caturga"></a>
              <a href="http://www.johansens.com/north-america/costa-rica/" class="partners__link" target="_blank"><img src="<?php echo get_template_directory_uri();?>/img/partners/Jo-Logo.jpg" alt="Johansen"></a>
-             <a href="https://www.budget.co.cr/rental-hermosa-guanacaste/" class="partners__link budget-logo" target="_blank"><img src="https://www.budget.com/budgetWeb/images/newlayout/budgetLogoNew1.png" alt="budgetLogo"></a>
+             <a href="https://www.budget.co.cr/reserve/reserverequest.php?code=M014600&ref=PEXS&lg=0" class="partners__link budget-logo" target="_blank"><img src="<?php echo get_template_directory_uri();?>/img/partners/budgetLogoNew1.png" alt="budgetLogo"></a>
             
             
         </div>

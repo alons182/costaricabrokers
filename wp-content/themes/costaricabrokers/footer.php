@@ -45,7 +45,7 @@
                      <a href="https://www.twitter.com/brokerscr" class="footer__social__link" target="_blank"><i class="icon-twitter"></i></a>
                      <!-- <a href="#" class="footer__social__link"><i class="icon-google-plus"></i></a> -->
                      <a href="https://www.instagram.com/brokersCR/" class="footer__social__link" target="_blank"><i class="fa fa-instagram"></i></a>
-                     <!-- <a href="https://www.budget.co.cr/rental-hermosa-guanacaste/" class="budget-logo" target="_blank"><img src="https://www.budget.com/budgetWeb/images/newlayout/budgetLogoNew1.png" alt="budgetLogo"></a> -->
+            
                 </article>
             </div>
             <div class="footer__copyright">
@@ -66,7 +66,7 @@
         </div>
     </footer>
     <div class="rent-a-cart-button">
-        <a href="https://www.budget.co.cr/rental-hermosa-guanacaste/" class="btn-renta-car" target="_blank">Rent a car</a>
+        <a href="https://www.budget.co.cr/reserve/reserverequest.php?code=M014600&ref=PEXS&lg=0" class="btn-renta-car" target="_blank">Rent a car</a>
     </div>
     <div id="contact" class="contact white-popup mfp-hide mfp-with-anim">
       

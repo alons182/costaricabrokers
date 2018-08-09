@@ -45,8 +45,9 @@
                      <a href="https://www.twitter.com/brokerscr" class="footer__social__link" target="_blank"><i class="icon-twitter"></i></a>
                      <!-- <a href="#" class="footer__social__link"><i class="icon-google-plus"></i></a> -->
                      <a href="https://www.instagram.com/brokersCR/" class="footer__social__link" target="_blank"><i class="fa fa-instagram"></i></a>
-            
+                    
                 </article>
+                <a href="https://www.ict.go.cr/" class="partners__link" target="_blank"><img src="http://www.pexscr.com/wp-content/uploads/2018/08/ict-1.png" alt="ICT"></a>
             </div>
             <div class="footer__copyright">
                 <p>Copyright 2016-<?php echo date('Y'); ?>, <a href="https://www.avotz.com/">Avotz</a>. All rights reserved. </p>
